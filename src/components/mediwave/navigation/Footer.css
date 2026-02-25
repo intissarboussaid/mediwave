@@ -1,0 +1,71 @@
+#footer footer .container-fluid ul {
+    text-decoration: none;
+
+}
+
+.footerMediwave h2 {
+    font-size: 30px;
+    margin-left: 55%;
+    margin-top: 2%;
+}
+
+#footer footer .container-fluid ul li {
+    list-style: none;
+}
+
+.footerMediwave .projets a {
+    color: white;
+    font-size: 120%;
+}
+
+.footerMediwave .projets a:hover {
+    color: #3498db;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.footerMediwave .nosService {
+    margin-left: 60%;
+    margin-top: 2%;
+}
+
+@media (width > 991px) {
+      
+    .footerMediwave .container-fluid .row .ourServices .title {
+        margin-left: 85%;
+        width: 100%;
+    }
+
+    .footerMediwave .container-fluid .row .ourServices .first {
+        margin-left: 100%;
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .footerMediwave .container-fluid .row .ourServices .second {
+        margin-left: 200%;
+        font-size: 16px;
+        width: 120%;
+        margin-top: -110px;
+    }
+}
+
+@media (max-width: 991px) {
+    .footerMediwave .container-fluid .row .ourServices {
+        margin-left: -100%;
+    }
+
+    .footerMediwave .container-fluid .row .ourServices ul {
+        margin-left: -10%;
+        font-size: 16px;
+    }
+}
+@media (max-width: 280px) {
+    .footerMediwave .ourServices h2{font-size: 19px;}
+ .footerMediwave .ourServices .nosService ul a{
+    font-size: 13px;
+  } 
+  .footerMediwave li a {
+    font-size: 13px;
+  } 
+}

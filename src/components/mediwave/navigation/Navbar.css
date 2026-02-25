@@ -1,0 +1,113 @@
+@media screen and (max-width: 1290px) {
+  .navItemStyle {
+    font-size: 12px !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  
+  ul .dropdown {
+    background: rgba(130, 188, 228, 0.9);
+    filter: blur(30%);
+    width: 15%;
+    transform: translateX(140%);   
+    border-radius: 10%;
+    margin-top: 0%;
+  }
+  ul .dropdownVRME {
+    background: rgba(170, 170, 170, 0.87);
+    filter: blur(30%);
+    width: 15%;
+    transform: translateX(150%);   
+    border-radius: 10%;
+    margin-top: 0%;
+  }
+.dropdowsStyleMedilink{
+ 
+ margin-left: 30%;
+}
+}
+@media screen and (max-width: 767px) {
+  .dropdowsStyleVRME{
+    margin-left: 30%;
+  }
+  ul .dropdown {
+    background: rgba(130, 188, 228, 0.9);
+    filter: blur(30%);
+    width: 15%;
+    transform: translateX(140%);   
+    border-radius: 10%;
+    margin-top: 0%;
+  }
+  ul .dropdownVRME {
+    background: rgba(170, 170, 170, 0.87);
+    filter: blur(30%);
+    width: 15%;
+    transform: translateX(150%);   
+    border-radius: 10%;
+    margin-top: 0%;
+  }
+  
+  .dropdowsStyleSteriwave {
+    margin-left: 50%;
+  }
+}
+@media screen and (max-width:359px) {
+  
+  ul .dropdown {
+    background: rgba(130, 188, 228, 0.9);
+    filter: blur(30%);
+    width: 15%;
+    transform: translateX(130%);   
+    border-radius: 10%;
+    margin-top: 0%;
+    height: 100px;
+  }
+  .dropdowsStyle {
+    margin-left: 40%;
+  }
+}
+
+
+
+.dropdowsStyle {
+  margin-left: 40%;
+}
+
+.dropdown {
+  width: 90px;
+  filter: blur(30%);
+  height: 60px;
+  transform: translateX(450%);
+  margin-top: 12%;
+}
+.dropdownVRME{
+  width: 90px;
+  filter: blur(30%);
+  height: 60px;
+  transform: translateX(850%);
+  margin-top: 10%;
+}
+header nav .container .inner-header #bs-example-navbar-collapse-1 ul .dropdown-menu {
+  position: absolute;
+  top: 8rem;
+  right: -5rem;
+  width: 120px;
+  padding: 15px;
+  border-radius: 80px;
+  background-color: white;
+  border: 2px solid gray;
+  text-align: center;
+}
+
+header nav .container .inner-header #bs-example-navbar-collapse-1 ul .dropdown-menu ::before {
+  /* content: ''; */
+  position: absolute;
+  top: -0.7rem;
+  height: 20px;
+  right: 1.1rem;
+  width: 20px;
+  transform: rotate(45deg);
+  background-color: white;
+  border-left: 1px solid gray;
+  border-top: 1px solid gray;
+}

@@ -1,0 +1,34 @@
+
+.mediwaveSection{
+  background-image: url(../../../assets/images/headerSteriwave.jpg);
+  background-size: cover;
+  width: 100%;
+  size: 10;
+}
+.center-button a{
+  background-color: rgba(170, 170, 170, 0.87);
+}
+@media screen and (max-width: 500px) {
+    .videoStyle{
+        top: 40px; 
+     }
+  }
+@media screen and (max-width: 300px) {
+    .videoStyle{
+       top: 40px; 
+    }
+  }
+
+  @media screen and (width> 500px) {
+    .subTitle2{
+       display: none;
+    }
+    .subTitle1{
+      display: none;
+   }
+  }
+  @media screen and (width< 500px) {
+    .subTitle{
+       display: none;
+    }
+  }
