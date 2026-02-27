@@ -17,7 +17,7 @@ const App = () => {
 
   return (
     <div id="container">
-       <BrowserRouter>
+       <BrowserRouter basename="/mediwave">
         <Routes>
           <Route path="*" element={<HomeMediwave  />} />
           <Route path="vrme" element={<PageHomeVRme />} />
