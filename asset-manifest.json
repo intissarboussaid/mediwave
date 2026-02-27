@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mediwave/static/css/main.f6b42ec7.css",
-    "main.js": "/mediwave/static/js/main.4cf54e92.js",
+    "main.js": "/mediwave/static/js/main.8fdfb3df.js",
     "static/js/787.8c58284b.chunk.js": "/mediwave/static/js/787.8c58284b.chunk.js",
     "static/media/nosTherapeute.png": "/mediwave/static/media/nosTherapeute.0d7ef55ddcefeaf48062.png",
     "static/media/vid.mp4": "/mediwave/static/media/vid.a602d1e38d6d42927be7.mp4",
@@ -79,11 +79,11 @@
     "index.html": "/mediwave/index.html",
     "static/media/getFetch.cjs": "/mediwave/static/media/getFetch.40f37ddea2378391108f.cjs",
     "main.f6b42ec7.css.map": "/mediwave/static/css/main.f6b42ec7.css.map",
-    "main.4cf54e92.js.map": "/mediwave/static/js/main.4cf54e92.js.map",
+    "main.8fdfb3df.js.map": "/mediwave/static/js/main.8fdfb3df.js.map",
     "787.8c58284b.chunk.js.map": "/mediwave/static/js/787.8c58284b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f6b42ec7.css",
-    "static/js/main.4cf54e92.js"
+    "static/js/main.8fdfb3df.js"
   ]
 }
