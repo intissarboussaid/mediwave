@@ -1,6 +1,5 @@
 import React from 'react'
 import VideoHeader from '../videoheader/Header'
-
 import Navbar from '../navigation/Navbar'
 import Footer from "../../mediwave/navigation/Footer";
 import Contact from '../../mediwave/contact/Contact';

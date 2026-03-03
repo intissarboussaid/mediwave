@@ -23,7 +23,7 @@ i18n
       caches: ["cookie"],
     },
     backend: {
-      loadPath: "/mediwave/assets/locales/{{lng}}/translation.json",
+      loadPath: "/mediwave/assets/locales/en/translation.json",
     },
     react: { useSuspense: false },
   });
