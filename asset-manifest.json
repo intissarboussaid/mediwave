@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mediwave/static/css/main.f6b42ec7.css",
-    "main.js": "/mediwave/static/js/main.8809fc7d.js",
+    "main.js": "/mediwave/static/js/main.1e14a2dc.js",
     "static/js/787.8c58284b.chunk.js": "/mediwave/static/js/787.8c58284b.chunk.js",
     "static/media/nosTherapeute.png": "/mediwave/static/media/nosTherapeute.0d7ef55ddcefeaf48062.png",
     "static/media/vid.mp4": "/mediwave/static/media/vid.a602d1e38d6d42927be7.mp4",
@@ -43,7 +43,6 @@
     "static/media/blog1.jpg": "/mediwave/static/media/blog1.28faf37bee0e13fb24bb.jpg",
     "static/media/physiotherapy6.jpg": "/mediwave/static/media/physiotherapy6.0ca87757a56a03415b9b.jpg",
     "static/media/acrophobie1.jpg": "/mediwave/static/media/acrophobie1.f78956d792fa926e5635.jpg",
-    "static/media/acrophobie.jpg": "/mediwave/static/media/acrophobie.cdd6b44c553db59c6a44.jpg",
     "static/media/physiotherapy4.jpg": "/mediwave/static/media/physiotherapy4.a3a4227eb52d0b7f12d5.jpg",
     "static/media/steriwaveProb.jpg": "/mediwave/static/media/steriwaveProb.f8ba748ea0116c56ad25.jpg",
     "static/media/doc1.jpg": "/mediwave/static/media/doc1.2a196081cfdad5d2303c.jpg",
@@ -66,7 +65,6 @@
     "static/media/AppleOfEden.jpg": "/mediwave/static/media/AppleOfEden.acca6c08366da72397c2.jpg",
     "static/media/physiotherapy5.jpg": "/mediwave/static/media/physiotherapy5.fda7b611370a31026f9c.jpg",
     "static/media/medilink.jpg": "/mediwave/static/media/medilink.aa52f1f7669a3a60f1c9.jpg",
-    "static/media/contactMediwave.jpg": "/mediwave/static/media/contactMediwave.a9aab56b670ff1e60f33.jpg",
     "static/media/kineSquat.jpg": "/mediwave/static/media/kineSquat.8ac63661ffba20398623.jpg",
     "static/media/3dwave.png": "/mediwave/static/media/3dwave.0e49f56d3f14b3a9bee4.png",
     "static/media/kineVr.jpg": "/mediwave/static/media/kineVr.b706e7b617e7b73fda9c.jpg",
@@ -79,11 +77,11 @@
     "index.html": "/mediwave/index.html",
     "static/media/getFetch.cjs": "/mediwave/static/media/getFetch.40f37ddea2378391108f.cjs",
     "main.f6b42ec7.css.map": "/mediwave/static/css/main.f6b42ec7.css.map",
-    "main.8809fc7d.js.map": "/mediwave/static/js/main.8809fc7d.js.map",
+    "main.1e14a2dc.js.map": "/mediwave/static/js/main.1e14a2dc.js.map",
     "787.8c58284b.chunk.js.map": "/mediwave/static/js/787.8c58284b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f6b42ec7.css",
-    "static/js/main.8809fc7d.js"
+    "static/js/main.1e14a2dc.js"
   ]
 }
