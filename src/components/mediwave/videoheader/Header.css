@@ -1,0 +1,19 @@
+.content{
+  background-image: url(../../../assets/images/backgroudMediwave1.jpg);
+  background-size: cover;
+  width: 100%;
+  size: 10;
+}
+
+@media screen and (max-width: 500px) {
+    .videoStyle{
+        top: 40px; 
+     }
+
+
+  }
+@media screen and (max-width: 300px) {
+    .videoStyle{
+       top: 40px; 
+    }
+  }

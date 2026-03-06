@@ -1,0 +1,386 @@
+
+.all2{
+    /* margin: 0;
+    padding: 0; */
+    /* box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif; */
+    cursor: pointer;
+    /* overflow: hidden; */
+  }
+   .containerslide {
+    width:100%;
+    position: relative;
+    padding: 30px;
+    right:5.5%; 
+  } 
+   #slide {
+    width: max-content;
+  }
+   .all2 .item2 {
+    width: 100%;
+    height: 100%;
+    transition: 0.8s;
+    position: absolute;   
+  
+  }
+  /* left side */
+  .item2:nth-child(1){
+   margin-left: -3%;
+   border-radius: none;
+   margin-top: 7%;
+   width: 65vh;
+   height: 75vh;
+   display: none;
+  }
+  /* center side */
+  .item2:nth-child(2) {
+    border-radius: none; 
+    width: 100%;
+    height: 100%;
+    margin-top:5%;
+  } 
+  /* right side */
+  .item2:nth-child(3) {
+    margin-left: 70%; 
+    z-index: 0;
+    border-radius: none;
+    margin-top: 7%;
+    width: 65vh;
+    height: 75vh;
+    display: none;
+  }
+  .item2:nth-child(4) {
+    left: calc(50% + 220px);
+    display: none;
+  }
+  .item2:nth-child(5) {
+    left: calc(50% + 440px);
+      display: none;
+  }
+  .item2:nth-child(n + 6) {
+    left: calc(50% + 660px);
+    opacity: 0;
+    display: none;
+  }  
+  .item2 .content2 {
+    position: relative;
+    margin-top: -5%;
+    left: 9%;
+    height: 50%;
+font-size: 19px;
+    text-align: justify;
+    padding: 0;
+    color: #505050;  
+    transform: translate(0, -50%);
+    display: none;
+    justify-content: space-between;
+    width: 80%;
+  }
+  .item2:nth-child(2) .content2{
+    display: block;
+    z-index: 2;
+  }
+  .all2 .containerslide .item2 .name {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: -60%;
+    margin-left: -20%;
+    opacity: 0;
+    animation: showcontent 1s ease-in-out 1 forwards;
+  }
+
+ 
+  @keyframes showcontent {
+    from {
+      opacity: 0;
+      transform: translate(0, 100px);
+      filter: blur(33px);
+    }
+    to {
+      opacity: 1;
+      transform: translate(0, 0);
+      filter: blur(0);
+    }
+  }
+  .all2  button{
+  
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid #3498db;
+    color: #3498db;
+    transition: 0.5s;
+    padding: 10px 20px;
+    opacity: 0;
+    margin-top: 65%;
+    margin-left: 50%;
+    animation: showcontent 1s ease-in-out 0.6s 1 forwards;
+  }
+ 
+  .all2 button:hover {
+    background-color: #3498db;
+    color: white;
+  } 
+ 
+.all2  #next {
+    margin-left:1%;
+     } 
+
+
+
+  /* Responsive part  */
+
+
+
+  @media screen and (max-width : 1290px ){
+   .all2  button{
+  
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid #3498db;
+    color: #3498db;
+    transition: 0.5s;
+    padding: 10px 20px;
+    opacity: 0;
+    margin-top: 65%;
+    margin-left: 30%;
+    animation: showcontent 1s ease-in-out 0.6s 1 forwards;
+  }
+  }
+  @media screen and (max-width : 1200px ){
+    .all2  button{
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     background-color: transparent;
+     border: 2px solid #3498db;
+     color: #3498db;
+     transition: 0.5s;
+     padding: 10px 20px;
+     opacity: 0;
+     margin-top: 90%;
+     margin-left: 45%;
+     animation: showcontent 1s ease-in-out 0.6s 1 forwards;
+   }
+   }
+   @media screen and (max-width <= 1000px ){
+    .all2  button{
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     background-color: transparent;
+     border: 2px solid #3498db;
+     color: #3498db;
+     transition: 0.5s;
+     padding: 10px 20px;
+     opacity: 0;
+     margin-top: 40%;
+     margin-left: 35%;
+     animation: showcontent 1s ease-in-out 0.6s 1 forwards;
+   }
+   }
+   @media screen and (max-width :990px ){
+    .all2  button{
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     background-color: transparent;
+     border: 2px solid #3498db;
+     color: #3498db;
+     transition: 0.5s;
+     padding: 10px 20px;
+     opacity: 0;
+     margin-top: 40%;
+     margin-left: 35%;
+     animation: showcontent 1s ease-in-out 0.6s 1 forwards;
+   }
+   }
+   @media screen and (max-width :770px ){
+    .all2  button{
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     background-color: transparent;
+     border: 2px solid #3498db;
+     color: #3498db;
+     transition: 0.5s;
+     padding: 10px 20px;
+     opacity: 0;
+     margin-top: 55%;
+     margin-left: 35%;
+     animation: showcontent 1s ease-in-out 0.6s 1 forwards;
+   }
+   }
+   @media screen and (max-width :715px ){
+    .all2  button{
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     background-color: transparent;
+     border: 2px solid #3498db;
+     color: #3498db;
+     transition: 0.5s;
+     padding: 10px 20px;
+     opacity: 0;
+     margin-top: 65%;
+     margin-left: 35%;
+     animation: showcontent 1s ease-in-out 0.6s 1 forwards;
+   }
+   }
+   @media screen and (max-width :670px ){
+    .all2  button{
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     background-color: transparent;
+     border: 2px solid #3498db;
+     color: #3498db;
+     transition: 0.5s;
+     padding: 10px 20px;
+     opacity: 0;
+     margin-top: 80%;
+     margin-left: 35%;
+     animation: showcontent 1s ease-in-out 0.6s 1 forwards;
+   }
+   }
+   @media screen and (max-width :596px ){
+    .all2  button{
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     background-color: transparent;
+     border: 2px solid #3498db;
+     color: #3498db;
+     transition: 0.5s;
+     padding: 10px 20px;
+     opacity: 0;
+     margin-top: 90%;
+     margin-left: 35%;
+     animation: showcontent 1s ease-in-out 0.6s 1 forwards;
+   }
+   .all2  .dess{
+    font-size: 18px;
+      }
+   }
+   @media screen and (max-width :557px ){
+    .all2  button{
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     background-color: transparent;
+     border: 2px solid #3498db;
+     color: #3498db;
+     transition: 0.5s;
+     padding: 10px 20px;
+     opacity: 0;
+     margin-top: 90%;
+     margin-left: 35%;
+     animation: showcontent 1s ease-in-out 0.6s 1 forwards;
+   }
+   .all2  .dess{
+    font-size: 17px;
+      }
+  }
+   @media screen and (max-width :540px ){
+    .all2  button{
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     background-color: transparent;
+     border: 2px solid #3498db;
+     color: #3498db;
+     transition: 0.5s;
+     padding: 10px 20px;
+     opacity: 0;
+     margin-top: 100%;
+     margin-left: 35%;
+     animation: showcontent 1s ease-in-out 0.6s 1 forwards;
+   }
+   .all2  .dess{
+    font-size: 16px;
+      }
+   }
+   @media screen and (max-width :510px ){
+    .all2  button{
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     background-color: transparent;
+     border: 2px solid #3498db;
+     color: #3498db;
+     transition: 0.5s;
+     padding: 10px 20px;
+     opacity: 0;
+     margin-top: 120%;
+     margin-left: 35%;
+     animation: showcontent 1s ease-in-out 0.6s 1 forwards;
+   }
+   .all2  .dess{
+    font-size: 16px;
+      }
+   }
+   @media screen and (max-width :477px ){
+    .all2  button{
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     background-color: transparent;
+     border: 2px solid #3498db;
+     color: #3498db;
+     transition: 0.5s;
+     padding: 10px 20px;
+     opacity: 0;
+     margin-top: 130%;
+     margin-left: 35%;
+     animation: showcontent 1s ease-in-out 0.6s 1 forwards;
+   }
+   .all2  .dess{
+    font-size: 16px;
+      }
+   }
+   @media screen and (max-width :457px ){
+    .all2  button{
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     background-color: transparent;
+     border: 2px solid #3498db;
+     color: #3498db;
+     transition: 0.5s;
+     padding: 10px 20px;
+     opacity: 0;
+     margin-top: 160%;
+     margin-left: 35%;
+     animation: showcontent 1s ease-in-out 0.6s 1 forwards;
+   }
+   .all2  .dess{
+    font-size: 16px;
+      }
+   }
+
+   @media screen and (max-width :431px ){
+    .all2  button{
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     background-color: transparent;
+     border: 2px solid #3498db;
+     color: #3498db;
+     transition: 0.5s;
+     padding: 10px 20px;
+     opacity: 0;
+     margin-top: 170%;
+     margin-left: 35%;
+     animation: showcontent 1s ease-in-out 0.6s 1 forwards;
+   }
+   .all2  .dess{
+font-size: 16px;
+  }
+   }
