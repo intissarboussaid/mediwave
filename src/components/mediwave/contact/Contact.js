@@ -4,9 +4,9 @@ import { Toast } from "primereact/toast";
 import { useTranslation } from "react-i18next";
 import './Contact.css';
 import useResizeScreen from "../../../utils/useResizeScreen";
-import img from '../../../assets/images/contactMediwave.jpg';
-import img2 from '../../../assets/images/tarification.png';
-import img3 from '../../../assets/images/doctor.jpg';
+
+
+
 const Contact = () => {
   const windowDimensions = useResizeScreen();
   const error = {
@@ -38,32 +38,10 @@ const Contact = () => {
       detail: "Message Envoyer",
     });
   };
-  const [left, setLeft] = useState('50%');
-  const [topForm, setTopForm] = useState({
-    marginTop: '-50%',
-  });
-  const [imgStyle, setImgStyle] = useState({
-    width: '30%',
-    height: '30%',
-    marginLeft: '8%',
-    marginTop: '-10%'
-  })
-  const [img2Style, setImg2Style] = useState({
-    width: '12%',
-    height: '12%',
-    marginLeft: '-5%',
-    border: ' 5px solid white',
-    boxShadow: ' 0 20px 30px #505050',
-    marginTop: '-15%'
-  })
-  const [img3Style, setImg3Style] = useState({
-    width: '12%',
-    height: '12%',
-    marginLeft: '-25%',
-    border: ' 5px solid white',
-    boxShadow: ' 0 20px 30px #505050',
-    marginTop: '10%'
-  })
+ 
+  
+
+
   const sendEmail = (e) => {
     e.preventDefault();
     const validationErrors = {}
@@ -107,322 +85,78 @@ const Contact = () => {
   useEffect(() => {
     if (windowDimensions.width > 2000) {
       setbuttonStyle('0%');
-      setTopForm({
-        marginTop: '-30%'
-      });
-      setImgStyle({
-        width: '30%',
-        height: '30%',
-        marginLeft: '8%',
-        marginTop: '-10%'
-      });
-      setImg2Style({
-        width: '12%',
-        height: '12%',
-        marginLeft: '-5%',
-        border: ' 5px solid white',
-        boxShadow: ' 0 20px 30px #505050',
-        marginTop: '-15%'
-      });
-      setImg3Style({
-        width: '12%',
-        height: '12%',
-        marginLeft: '-25%',
-        border: ' 5px solid white',
-        boxShadow: ' 0 20px 30px #505050',
-        marginTop: '10%'
-      });
+
 
     }
     else if (windowDimensions.width > 1300 && windowDimensions.width < 2000) {
       setbuttonStyle('70%');
-      setTopForm({
-        marginTop: '-10%'
-      });
-      setImgStyle({
-        width: '40%',
-        height: '60%',
-        marginLeft: '8%',
-        marginTop: '-9%'
-      });
-      setImg2Style({
-        width: '12%',
-        height: '12%',
-        marginLeft: '-5%',
-        border: ' 5px solid white',
-        boxShadow: ' 0 20px 30px #505050',
-        marginTop: '17%'
-      });
-      setImg3Style({
-        width: '12%',
-        height: '12%',
-        marginLeft: '-25%',
-        border: ' 5px solid white',
-        boxShadow: ' 0 20px 30px #505050',
-        marginTop: '17%'
-      });
+
+
     }
     else if (windowDimensions.width > 1200 && windowDimensions.width < 1300) {
       setbuttonStyle('60%');
-      setTopForm({
-        marginTop: '-10%'
-      });
-      setImgStyle({
-        width: '40%',
-        height: '60%',
-        marginLeft: '8%',
-        marginTop: '-9%'
-      });
-      setImg2Style({
-        width: '12%',
-        height: '12%',
-        marginLeft: '-5%',
-        border: ' 5px solid white',
-        boxShadow: ' 0 20px 30px #505050',
-        marginTop: '17%'
-      });
-      setImg3Style({
-        width: '12%',
-        height: '12%',
-        marginLeft: '-25%',
-        border: ' 5px solid white',
-        boxShadow: ' 0 20px 30px #505050',
-        marginTop: '17%'
-      });
+
     }
     else if (windowDimensions.width > 1100 && windowDimensions.width < 1200) {
       setbuttonStyle('50%');
-      setTopForm({
-        marginTop: '-10%'
-      });
-      setImgStyle({
-        width: '40%',
-        height: '60%',
-        marginLeft: '8%',
-        marginTop: '0%'
-      });
-      setImg2Style({
-        width: '12%',
-        height: '12%',
-        marginLeft: '-5%',
-        border: ' 5px solid white',
-        boxShadow: ' 0 20px 30px #505050',
-        marginTop: '17%'
-      });
-      setImg3Style({
-        width: '12%',
-        height: '12%',
-        marginLeft: '-25%',
-        border: ' 5px solid white',
-        boxShadow: ' 0 20px 30px #505050',
-        marginTop: '17%'
-      });
+
     }
     else if (windowDimensions.width > 900 && windowDimensions.width < 1200) {
-      setLeft('30%')
+     
       setbuttonStyle('50%');
-      setTopForm({
-        marginTop: '-10%'
-      });
-      setImgStyle({
-        width: '50%',
-        height: '60%',
-        marginLeft: '55%',
-        marginTop: '0%',
-      });
-      setImg2Style({
-        width: '12%',
-        height: '12%',
-        marginLeft: '-5%',
-        border: ' 5px solid white',
-        boxShadow: ' 0 20px 30px #505050',
-        marginTop: '17%',
-        display: 'none'
-      });
-      setImg3Style({
-        width: '12%',
-        height: '12%',
-        marginLeft: '-25%',
-        border: ' 5px solid white',
-        boxShadow: ' 0 20px 30px #505050',
-        marginTop: '17%',
-        display: 'none'
-      });
+
     }
     else if (windowDimensions.width > 800 && windowDimensions.width < 900) {
-      setLeft('27%')
+     
       setbuttonStyle('50%');
-      setTopForm({
-        marginTop: '-10%'
-      });
-      setImgStyle({
-        width: '30%',
-        height: '30%',
-        marginLeft: '8%',
-        marginTop: '3%'
-      });
-      setImg2Style({
-        width: '12%',
-        height: '12%',
-        marginLeft: '-5%',
-        border: ' 5px solid white',
-        boxShadow: ' 0 20px 30px #505050',
-        marginTop: '-5%'
-      });
-      setImg3Style({
-        width: '12%',
-        height: '12%',
-        marginLeft: '-25%',
-        border: ' 5px solid white',
-        boxShadow: ' 0 20px 30px #505050',
-        marginTop: '17%'
-      });
+
     }
 
     else if (windowDimensions.width <= 800 && windowDimensions.width > 646) {
-      setLeft('0%')
+      
       setbuttonStyle('40%');
-      setTopForm({
-        marginTop: '-1%'
-      });
-      setImgStyle({
-        display: 'none'
-      });
-      setImg2Style({
-        display: 'none'
-      });
-      setImg3Style({
-        display: 'none'
-      });
+
     } else if (windowDimensions.width <= 646 && windowDimensions.width > 520) {
-      setLeft('0%')
+     
       setbuttonStyle('35%');
-      setTopForm({
-        marginTop: '-23%'
-      });
-      setImgStyle({
-        display: 'none'
-      });
-      setImg2Style({
-        display: 'none'
-      });
-      setImg3Style({
-        display: 'none'
-      });
+
     }
     else if (windowDimensions.width <= 520 && windowDimensions.width > 490) {
-      setLeft('0%')
+     
       setbuttonStyle('30%');
-      setTopForm({
-        marginTop: '-30%'
-      });
-      setImgStyle({
-        display: 'none'
-      });
-      setImg2Style({
-        display: 'none'
-      });
-      setImg3Style({
-        display: 'none'
-      });
+
 
     }
     else if (windowDimensions.width < 490 && windowDimensions.width > 384) {
-      setLeft('0%')
+      
       setbuttonStyle('30%');
-      setTopForm({
-        marginTop: '-37%'
-      });
-      setImgStyle({
-        display: 'none'
-      });
-      setImg2Style({
-        display: 'none'
-      });
-      setImg3Style({
-        display: 'none'
-      });
+
     }
     else if (windowDimensions.width < 384 && windowDimensions.width > 365) {
-      setLeft('0%')
+    
       setbuttonStyle('25%');
-      setTopForm({
-        marginTop: '-45%'
-      });
-      setImgStyle({
-        display: 'none'
-      });
-      setImg2Style({
-        display: 'none'
-      });
-      setImg3Style({
-        display: 'none'
-      });
+
     }
     else if (windowDimensions.width < 365 && windowDimensions.width > 322) {
-      setLeft('0%')
+     
       setbuttonStyle('25%');
-      setTopForm({
-        marginTop: '-50%'
-      });
-      setImgStyle({
-        display: 'none'
-      });
-      setImg2Style({
-        display: 'none'
-      });
-      setImg3Style({
-        display: 'none'
-      });
+
     }
     else if (windowDimensions.width <= 322 && windowDimensions.width < 290) {
-      setLeft('0%')
+      
       setbuttonStyle('25%');
-      setTopForm({
-        marginTop: '-52%'
-      });
-      setImgStyle({
-        display: 'none'
-      });
-      setImg2Style({
-        display: 'none'
-      });
-      setImg3Style({
-        display: 'none'
-      });
+
     }
 
     else if (windowDimensions.width <= 290 && windowDimensions.width > 280) {
-      setLeft('0%')
+      
       setbuttonStyle('25%');
-      setTopForm({
-        marginTop: '-60%'
-      });
-      setImgStyle({
-        display: 'none'
-      });
-      setImg2Style({
-        display: 'none'
-      });
-      setImg3Style({
-        display: 'none'
-      });
+
     }
     else if (windowDimensions.width <= 280) {
-      setLeft('0%')
+     
       setbuttonStyle('0%');
-      setTopForm({
-        marginTop: '-70%'
-      });
-      setImgStyle({
-        display: 'none'
-      });
-      setImg2Style({
-        display: 'none'
-      });
-      setImg3Style({
-        display: 'none'
-      });
+
 
     }
   }, [windowDimensions.width,]);
@@ -448,17 +182,17 @@ const Contact = () => {
                       </div>
                       <ul className="social-icons" style={{marginLeft:'12%', marginTop:'5%'}}>
                         <li>
-                          <a className="facebook">
+                          <a className="facebook" href="">
                             <i className="fa-brands fa-facebook-f"></i>
                           </a>
                         </li>
                         <li>
-                          <a className="instagram">
+                          <a className="instagram" href="">
                             <i className="fa-brands fa-instagram"></i>
                           </a>
                         </li>
                         <li>
-                          <a className="linkedin">
+                          <a className="linkedin" href="">
                             <i className="fa-brands fa-linkedin-in"></i>
                           </a>
                         </li>
@@ -502,8 +236,7 @@ const Contact = () => {
                   </div>
                 </div>
                 <div className="col-lg-5 col-md-5 col-sm-7 col-s-12 form-space" style={{ marginTop: '-5%' }}  >
-                  {/* <form ref={form} onSubmit={sendEmail} id="contact-form" > */}
-                     <form ref={form}  id="contact-form" >
+                  <form ref={form} onSubmit={sendEmail} id="contact-form" >
                     <div className="row text-center ">
                       <br /><br /><br />
                       <div className="col-md-12">
@@ -553,7 +286,7 @@ const Contact = () => {
                       id="comment"
                       placeholder="*Message*"
                     ></textarea>
-                    <input  style={{ marginLeft: buttonStyle }} type="submit" id="submit_contact" value="Submit" />
+                    <input onChange={handleChange} style={{ marginLeft: buttonStyle }} type="submit" id="submit_contact" value="Submit" />
                     <div id="msg" className="message"></div>
                   </form>
                 </div>

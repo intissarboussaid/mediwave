@@ -10,7 +10,7 @@ import tim from "../../../assets/images/TIM.png";
 import MS from "../../../assets/images/MS.png"
 import CTMBH from "../../../assets/images/CTMBH.jpg"
 import { useTranslation } from "react-i18next";
-import { motion } from "framer-motion";
+
 import useResizeScreen from "../../../utils/useResizeScreen";
 import bgPartner from "../../../assets/images/bgpartenaire.jpg";
 
@@ -167,9 +167,10 @@ const CarouselSlideItem = ({ pos, idx, activeIdx }) => {
     backgroundPosition: 'center',
     height:'70vh'
   };
- 
+
   const { t } = useTranslation();
   const windowDimensions = useResizeScreen();
+ 
   useEffect(() => {
     if(windowDimensions.width > 1000){  
         setTitleStyle({
@@ -184,6 +185,7 @@ const CarouselSlideItem = ({ pos, idx, activeIdx }) => {
       textTransform: 'uppercase',
   });
   setSlideWidth(20);
+
 }
 if (windowDimensions.width < 700 && windowDimensions.width > 500 ) {
   setTitleStyle({
@@ -191,6 +193,7 @@ if (windowDimensions.width < 700 && windowDimensions.width > 500 ) {
       textTransform: 'uppercase',
   });
   setSlideWidth(20);
+
 }
 if (windowDimensions.width < 500 &&  windowDimensions.width > 290) {
   setTitleStyle({
@@ -217,8 +220,10 @@ if (windowDimensions.width < 290) {
         <div className="row" style={{ marginTop: "2%" }}>
 
           <div className="title-section">
-            <h1 style={titleStyle} >{t("our")}<a style={{ color: 'rgb(52, 152, 219)', textDecoration: 'none' }}> Partenaires</a></h1>
+            <h1 style={titleStyle} >{t("our")}<a style={{ color: 'rgb(52, 152, 219)', textDecoration: 'none' }} href=""> Partenaires</a></h1>
           </div>
+          <p className="" style={{ marginButtom: '70px' }}> 
+          </p>
           <div className="col-lg-12 col-md-12 col-ls-12 " 
           style={bgPartenaire}
           >           

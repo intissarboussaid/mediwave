@@ -1,17 +1,9 @@
-import React, { useState, useEffect }  from 'react';
-import useResizeScreen from "../../../utils/useResizeScreen";
-
+import React from 'react';
 const DocumentViewer = ({ documents }) => {
  const handleClick = (url) => {
     window.open(url, '_blank');
  };
- const windowDimensions = useResizeScreen();
- const [ImgStyle, setImgStyle]=useState(
-   {width:'40px',
-   marginLeft:'30%'});
-   const [textStyle, setTextStyle]=useState(
-      {width:'70%',
-      marginLeft:'5%'});
+
  return (
     <div>
       {documents.map((doc, index) => (
@@ -22,9 +14,12 @@ const DocumentViewer = ({ documents }) => {
           alt={doc.name}
           onClick={() => handleClick(doc.url)}
           style={{width:'0%'}}
+          href=''
         >
-         <img src={doc.img} style={ImgStyle} />
-         <p style={textStyle}>{doc.title}</p>
+         <img src={doc.img} style={{width:'40px',
+   marginLeft:'30%'}} alt='img' />
+         <p style={{width:'70%',
+      marginLeft:'5%'}}>{doc.title}</p>
             </a>
             </div>
       ))}

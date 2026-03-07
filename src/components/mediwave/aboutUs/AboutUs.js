@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useTranslation } from "react-i18next";
 import useResizeScreen from "../../../utils/useResizeScreen";
 import img from "../../../assets/images/doctors.jpg";
-import img2 from "../../../assets/images/Steriwave.jpg";
+// import img2 from "../../../assets/images/Steriwave.jpg";
 import { motion } from "framer-motion";
 
 
@@ -21,14 +21,14 @@ function AboutUs() {
         marginLeft:'0%',
     //    marginTop:'-7%'
      });
-     const [img2Style, setImg2Style] = useState( {
-        width:'70%',
-        height:'100%',        
-        border:' 5px solid white',
-        boxShadow:' 0 5px 10px #505050', 
-        marginLeft:'180%', 
-        marginTop:'-40%', 
-        position:'relative'});
+    //  const [img2Style, setImg2Style] = useState( {
+    //     width:'70%',
+    //     height:'100%',        
+    //     border:' 5px solid white',
+    //     boxShadow:' 0 5px 10px #505050', 
+    //     marginLeft:'180%', 
+    //     marginTop:'-40%', 
+    //     position:'relative'});
     useEffect(() => {
 
         if(windowDimensions.width > 2000){  
@@ -59,15 +59,15 @@ function AboutUs() {
           width:'230%',
           height:'230%',
         });
-        setImg2Style({
-            width:'70%',
-            height:'100%',         
-            border:' 5px solid white',
-            boxShadow:' 0 5px 10px #505050', 
-            marginLeft:'180%', 
-            marginTop:'-40%', 
-            position:'relative'
-        });
+        // setImg2Style({
+        //     width:'70%',
+        //     height:'100%',         
+        //     border:' 5px solid white',
+        //     boxShadow:' 0 5px 10px #505050', 
+        //     marginLeft:'180%', 
+        //     marginTop:'-40%', 
+        //     position:'relative'
+        // });
         setFontSizeP('16px');
     }  else if (windowDimensions.width > 2000 && windowDimensions.width < 2100) {
   setTitleStyle({
@@ -282,10 +282,9 @@ setFontSizeP('16px');
             fontSize: '30px'
         });
         setTextStyle({
-            marginLeft:'38%',
-            marginTop: "15%",
-            width:'100%',
             marginLeft:'0%',
+            marginTop: "15%",
+            width:'100%'
         });
         setImgStyle({
           width:'70%',
@@ -301,10 +300,9 @@ setFontSizeP('16px');
             fontSize: '20px'
         });
         setTextStyle({
-            marginLeft:'38%',
-            marginTop: "15%",
-            width:'100%',
             marginLeft:'0%',
+            marginTop: "15%",
+            width:'100%'
         });
         setImgStyle({
           width:'100%',
@@ -320,10 +318,9 @@ setFontSizeP('16px');
             fontSize: '22px'
         });
         setTextStyle({
-            marginLeft:'38%',
-            marginTop: "15%",
-            width:'100%',
             marginLeft:'0%',
+            marginTop: "15%",
+            width:'100%'
         });
         setImgStyle({
           width:'100%',
@@ -331,15 +328,15 @@ setFontSizeP('16px');
           marginTop: "-10%",
           marginLeft:'0%',
         });
-        setImg2Style({
-            width:'25%',
-            height:'25%',        
-            border:' 5px solid white',
-            boxShadow:' 0 5px 10px #505050', 
-            marginLeft:'70%', 
-            marginTop:'-15%', 
-            position:'relative'
-        });
+        // setImg2Style({
+        //     width:'25%',
+        //     height:'25%',        
+        //     border:' 5px solid white',
+        //     boxShadow:' 0 5px 10px #505050', 
+        //     marginLeft:'70%', 
+        //     marginTop:'-15%', 
+        //     position:'relative'
+        // });
         setFontSizeP('11px');
 
 
@@ -363,13 +360,13 @@ setFontSizeP('16px');
             <div className="container">
                 <div className="title-section" style={{marginTop:'-15%'}}>                
                     <h1 style={titleStyle}>{t("about")}
-                    <a style={{color:'rgb(52, 152, 219)', textDecoration:'none'}}> {t("us")}</a>
+                    <a style={{color:'rgb(52, 152, 219)', textDecoration:'none'}} href=''> {t("us")}</a>
                    </h1>              
                 </div>
                 <div className='contents'>
                     
                     <div className='col-md-2 col-ms-2'>
-                        <img src={img} style={imgStyle}/>
+                        <img src={img} style={imgStyle} alt=''/>
                     </div>
                     <div  className='col-md-6 col-ms-7'style={textStyle}>
                 <motion.p
@@ -379,7 +376,7 @@ setFontSizeP('16px');
                     whileTap={{ scale: 0.8}}
                     style={{ textAlign: "justify", marginTop: "7%",fontSize:fontSizeP }}
                 >
-                       <a style={{color:'rgb(52, 152, 219)', textDecoration:'none', fontSize:'25px'}}> Mediwave</a>{t("about-us-text1")}<br />
+                       <a style={{color:'rgb(52, 152, 219)', textDecoration:'none', fontSize:'25px'}} href=''> Mediwave</a>{t("about-us-text1")}<br />
                     {t("about-us-text2")}<br />
                     {t("about-us-text3")}<br />
                     {t("about-us-text4")}<br />
@@ -388,6 +385,8 @@ setFontSizeP('16px');
                     </div>
                   
                 </div>
+                <div className='contents' style={{ marginBottom: "10px" }}></div>
+            
             </div>
 
         </section>

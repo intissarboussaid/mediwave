@@ -884,8 +884,8 @@ const VideoHeader = () => {
     //    });
     //    setTextSize({ fontSize: "9px" });
     //  }
-    console.log(height);
-  }, [windowDimensions.width,]);
+    
+  }, [windowDimensions.width, windowDimensions.height]);
   const [textSize, setTextSize] = useState({ fontSize: "26px" });
   return (
     <div>
@@ -897,8 +897,10 @@ const VideoHeader = () => {
         <div className="tp-banner-container content " >
           <div >
             <div className="tp-banner" style={{ width: "100%", height: height+"px", background: ' rgb(52, 152, 219,0.5)', top: '0', left: '0' }} >
-              <img src={img1} className="img" style={styleFrontImg1} />
-              <img src={img2} className="img" style={styleFrontImg2} />
+              <img src={img1} className="img" style={styleFrontImg1} alt="img
+              " />
+              <img src={img2} className="img" style={styleFrontImg2} alt="img
+              " />
               <div >
                 <div  style={{ marginTop: '-50%',   textAlign: 'justify' }}>
                   <div className="tp-caption small_text titleHeader" style={titleStyle} >

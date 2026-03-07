@@ -4,10 +4,7 @@ import useResizeScreen from "../../../utils/useResizeScreen";
 import img from "../../../assets/images/HeaderMedilink.png";
 const Footer = () => {
   const { t } = useTranslation();
-  const [top, setTop] =useState('5%');
   const windowDimensions = useResizeScreen();
-  const [margintop, setMargintop]= useState("translateY(100%)");
-  const [translateY, setTranslateY]= useState('translateY(30%)')
   useEffect(() => {
 
     if (windowDimensions.width > 2200) {
@@ -59,30 +56,30 @@ const Footer = () => {
       <footer className="footerSteriwave ">
         <div className="container-fluid">
           <div className="row">
-            <div className="title-section col-md-3 col-sm-3" style={{transform:translateY}}>
+            <div className="title-section col-md-3 col-sm-3" style={{transform:'translateY(30%)'}}>
               <div className="media-title">
                 <h1 style={{color:'white'}}>{t("f-m-t")}</h1>
               </div>
               <ul className="social-icons">
                 <li>
-                  <a className="facebook">
+                  <a className="facebook" href="">
                   <i className="fa-brands fa-facebook-f"></i>
                   </a>
                 </li>
                 <li>
-                  <a className="instagram">
+                  <a className="instagram" href="">
                   <i className="fa-brands fa-instagram"></i>
                   </a>
                 </li>
                 <li>
-                  <a className="linkedin">
+                  <a className="linkedin" href="">
                   <i className="fa-brands fa-linkedin-in"></i>
                   </a>
                 </li>
               </ul>
             </div>
            
-            <div className="col-md-6 col-sm-6 col-md-offset-2 " style={{transform:margintop}}>
+            <div className="col-md-6 col-sm-6 col-md-offset-2 " style={{transform:"translateY(100%)"}}>
               {/* <h1 style={{color:'white'}}>{t("f_1")}</h1> */}
               <p >{t("Scenarios")}</p>
             </div>

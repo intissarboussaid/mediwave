@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import img from "../../../assets/images/HeaderMedilink.png";
 import useResizeScreen from "../../../utils/useResizeScreen";
 import { useTranslation } from "react-i18next";
@@ -476,7 +476,6 @@ const VideoHeader = () => {
       });
       setTextSize({ fontSize: "10px" });
     }
-    console.log(height);
   }, [windowDimensions.width,]);
 
   return (

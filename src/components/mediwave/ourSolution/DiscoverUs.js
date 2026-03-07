@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from "react-i18next";
 import useResizeScreen from "../../../utils/useResizeScreen";
-import acrophobie from "../../../assets/images/acrophobie.jpg";
+
 import Steriwave from "../../../assets/images/steriwave3.jpg";
 import Medilink from "../../../assets/images/medilink.jpg";
 import solPhobia from "../../../assets/images/glossophobie.jpg";
@@ -17,11 +17,7 @@ function DiscoverUs() {
     const windowDimensions = useResizeScreen();
     const { t } = useTranslation();
     const [fontSizeP, setFontSizeP] = useState('16px');
-    const [ContanierRight, setContanierRight] = useState({
-        background: 'white',
-        height: '200%',
-        marginTop: '30%'
-    });
+
     const [titleStyle, setTitleStyle] = useState({
         fontSize: '50px',
         textTransform: 'uppercase',
@@ -66,20 +62,7 @@ function DiscoverUs() {
         width: '100%',
         height: '100%',
     });
-    const [SubkineImg, setSubkineImg] = useState({
 
-        width: '40%',
-        height: '40%',
-        border: ' 5px solid white',
-        boxShadow: ' 0 5px 10px #505050',
-        marginLeft: '80%',
-        marginTop: '-20%',
-        position: 'relative'
-    });
-    const [kineImg, setkineImg] = useState({
-        width: '100%',
-        height: '100%',
-    });
     const [buttonStyle, setButtonStyle] = useState({
         marginTop: '-10%',
     });
@@ -319,16 +302,7 @@ function DiscoverUs() {
         }
 
         else if (windowDimensions.width < 992) {
-            setSubkineImg({
-                marginLeft: '170%',
-                width: '40%',
-                height: '40%',
-                border: ' 5px solid white',
-                boxShadow: ' 0 5px 10px #505050',
-                marginTop: '-20%',
-                position: 'relative',
-                display: 'none'
-            });
+         
 
             setSubRightImg({
                 marginLeft: '170%',
@@ -453,14 +427,12 @@ function DiscoverUs() {
         else if (windowDimensions.width < 225) {
             setButtonLeftStyle({
                 width: '100%',
-                marginLeft: '-10%',
-                marginLeft:'-20%'
+                marginLeft: '-10%'
 
             });
             setButtonStyle({
                 width: '100%',
-                marginLeft: '-10%',
-                marginLeft:'-20%'
+                marginLeft: '-10%'
             });
             setTop('5%');
             setFontSizeP('10px');
@@ -485,13 +457,13 @@ function DiscoverUs() {
             <section className="about-section" style={{ marginTop: "-5%" }}>
                 <div className="container">
                     <div className="title-section" >
-                        <h1 style={titleStyle} >{t("t-Solution")} <a style={{ color: 'rgb(52, 152, 219)', textDecoration: 'none' }}>{t("t-Our")}</a></h1>
+                        <h1 style={titleStyle} >{t("t-Solution")} <a style={{ color: 'rgb(52, 152, 219)', textDecoration: 'none' }} href=''>{t("t-Our")}</a></h1>
                     </div>
                     <div>
                         <div className='col-lg-12 col-md-12 col-ms-12 col-s-12 ' style={{ background: 'white', height: '200%', marginTop: '17%' }}>
                             <div className='col-lg-4 col-md-4 col-ms-4 col-s-4 '>
-                                <img src={solPhobia} style={leftimgStyle} />
-                                <img src={phobia} style={SubLeftImg} />
+                                <img src={solPhobia} style={leftimgStyle} alt='' />
+                                <img src={phobia} style={SubLeftImg} alt='' />
                             </div>
                             <div className='col-lg-6 col-md-7 col-ms-8 col-s-12 ' style={{ marginTop: top }}>
                                 <motion.p
@@ -502,7 +474,7 @@ function DiscoverUs() {
                                     style={rightText}
                                 >
                                     {/* <div style={{fontSize:fontSizeP}}> */}
-                                        <a style={{ fontSize: '25px', color: 'rgb(52, 152, 219)', textDecoration: 'none' }}>  {t("h_2")}</a> ,{t("t-phobia_1")}<br />{t("t-phobia_2")}
+                                        <a style={{ fontSize: '25px', color: 'rgb(52, 152, 219)', textDecoration: 'none' }} href=''>  {t("h_2")}</a> ,{t("t-phobia_1")}<br />{t("t-phobia_2")}
                                         {/* </div> */}
                                 </motion.p>
 
@@ -519,8 +491,8 @@ function DiscoverUs() {
                         </div>
                         <div className='col-lg-12 col-md-12 col-ms-12 col-s-12 ' style={{ marginTop: '15%' }}>
                             <div className='col-lg-4 col-md-4 col-ms-4 col-s-4' >
-                                <img src={solKine} style={RightImg} />
-                                <img src={kine} style={SubRightImg} />
+                                <img src={solKine} style={RightImg} alt='' />
+                                <img src={kine} style={SubRightImg} alt='' />
                             </div>
 
                             <div className='col-lg-6 col-md-6 col-ms-6 col-s-6 ' style={{ marginTop: top }}>
@@ -532,7 +504,7 @@ function DiscoverUs() {
                                     style={teftText}
                                 >
                                     {/* <div style={{fontSize:fontSizeP}}> */}
-                                          <a style={{ fontSize: '25px', color: 'rgb(52, 152, 219)', textDecoration: 'none' }}> {t("h_5")}</a>,{t("t-kine-vr-1")}<br />{t("t-kine-vr-2")}
+                                          <a style={{ fontSize: '25px', color: 'rgb(52, 152, 219)', textDecoration: 'none' }} href=''> {t("h_5")}</a>,{t("t-kine-vr-1")}<br />{t("t-kine-vr-2")}
                                            {/* </div> */}
                                 </motion.p>
                                 <div className="center-button">
@@ -550,8 +522,8 @@ function DiscoverUs() {
                         </div>
                         <div className='col-lg-12 col-md-12 col-ms-12 col-s-12 ' style={{ background: 'white', height: '200%', marginTop: '30%' }}>
                             <div className='col-lg-4 col-md-4 col-ms-4 col-s-4 '>
-                                <img src={Steriwave} style={leftimgStyle} />
-                                <img src={desinfect} style={SubLeftImg} />
+                                <img src={Steriwave} style={leftimgStyle} alt=''/>
+                                <img src={desinfect} style={SubLeftImg}alt='' />
                             </div>
                             <div className='col-lg-6 col-md-7 col-ms-8 col-s-12 ' style={{ marginTop: top }}>
                                 <motion.p
@@ -563,7 +535,7 @@ function DiscoverUs() {
                                     style={rightText}
                                 >
                                     {/* <div style={{fontSize:fontSizeP}}>  */}
-                                    <a style={{ fontSize: '25px', color: 'rgb(52, 152, 219)', textDecoration: 'none' }}> Steriwave</a>,{t("t-Steriwave1")} <br />{t("t-Steriwave2")}
+                                    <a style={{ fontSize: '25px', color: 'rgb(52, 152, 219)', textDecoration: 'none' }} href=' alt'> Steriwave</a>,{t("t-Steriwave1")} <br />{t("t-Steriwave2")}
                                      {/* </div> */}
                                 </motion.p>
                                 <div className="center-button">
@@ -580,8 +552,8 @@ function DiscoverUs() {
                         </div>
                         <div className='col-lg-12 col-md-12 col-ms-12 col-s-12 ' style={{ marginTop: '15%' }}>
                             <div className='col-lg-4 col-md-4 col-ms-4 col-s-4' >
-                                <img src={Medilink} style={RightImg} />
-                                <img src={medilinkProb} style={SubRightImg} />
+                                <img src={Medilink} style={RightImg}  alt='' />
+                                <img src={medilinkProb} style={SubRightImg} alt='' />
                             </div>
 
                             <div className='col-lg-6 col-md-6 col-ms-6 col-s-6 ' style={{ marginTop: top }}>
@@ -593,7 +565,7 @@ function DiscoverUs() {
                                     style={teftText}
                                 >
                                     {/* <div style={{fontSize:fontSizeP}}>   */}
-                                    <a style={{ fontSize: '25px', color: 'rgb(52, 152, 219)', textDecoration: 'none' }}> Medilink</a>,{t("t-Medilink1")} <br />{t("t-Medilink2")} 
+                                    <a style={{ fontSize: '25px', color: 'rgb(52, 152, 219)', textDecoration: 'none' }} href=''> Medilink</a>,{t("t-Medilink1")} <br />{t("t-Medilink2")} 
                                     {/* </div> */}
                                 </motion.p>
                                 <div className="center-button">

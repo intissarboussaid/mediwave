@@ -80,6 +80,7 @@ useEffect(() => {
         setRightImg({
             width: '100%',
             height: '100%',
+            marginTop: '0%'
         });
        
         setLeftTextt({
@@ -91,7 +92,12 @@ useEffect(() => {
             marginLeft: '0%',
 
         });
-        setTop('5%');
+         setleftimgStyle({
+            marginTop: '0%',
+            width: '100%',
+            height: '100%',
+        });
+        setTop('100px');
     }
      if (windowDimensions.width < 992 && windowDimensions.width > 700 ) {
 
@@ -191,12 +197,12 @@ return (
         <section className="about-section" style={{ marginTop: "-8%" }}>
             <div className="container">
             <div className="title-section">
-             <h1 >R <a style={{ color: 'rgb(52, 152, 219)', textDecoration: 'none' }}>&</a>  D</h1>
+             <h1 >R <a style={{ color: 'rgb(52, 152, 219)', textDecoration: 'none' }} href=''>&</a>  D</h1>
           </div>
                 <div>
                     <div className='col-lg-12 col-md-12 col-ms-12 col-s-12 ' style={{ background: 'white', height: '200%', marginTop: '17%' }}>
                         <div className='col-lg-4 col-md-4 col-ms-4 col-s-4 '>
-                            <img src={ventilateur} style={leftimgStyle} />
+                            <img src={ventilateur} style={leftimgStyle} alt='img'/>
                         </div>
                         <div className='col-lg-5 col-md-5 col-ms-8 col-s-12 ' style={{ marginTop: top }}>
                             <motion.p
@@ -207,7 +213,7 @@ return (
                                 style={rightText}
                             >
                                 {/* <p style={{fontSize:fontSizeP}}> */}
-                                    <a style={{ fontSize: '25px', color: 'rgb(52, 152, 219)', textDecoration: 'none' }}>  {t("Syringe_Pump")}</a> ,{t("t_Syringe_Pump")}
+                                    <a style={{ fontSize: '25px', color: 'rgb(52, 152, 219)', textDecoration: 'none' }} href=''>  {t("Syringe_Pump")}</a> ,{t("t_Syringe_Pump")}
                                     {/* </p> */}
                             </motion.p>
 
@@ -216,7 +222,7 @@ return (
                     </div>
                     <div className='col-lg-12 col-md-12 col-ms-12 col-s-12 ' style={{marginTop:'15%'}}>
                         <div className='col-lg-4 col-md-4 col-ms-4 col-s-4' >
-                        <img  src={syringePump}  style={RightImg} />
+                        <img  src={syringePump}  style={RightImg} alt='' />
                         </div>
 
                         <div className='col-lg-5 col-md-5 col-ms-6 col-s-6 ' style={{ marginTop: top }}>
@@ -228,7 +234,7 @@ return (
                                 style={teftText}
                             >
                                 {/* <p style={{fontSize:fontSizeP}}>   */}
-                                <a style={{ fontSize: '25px', color: 'rgb(52, 152, 219)', textDecoration: 'none' }}> {t("Heart_Artificial")}</a>,{t("t_Heart_Artificial")}
+                                <a style={{ fontSize: '25px', color: 'rgb(52, 152, 219)', textDecoration: 'none' }} href=''> {t("Heart_Artificial")}</a>,{t("t_Heart_Artificial")}
                                 {/* </p> */}
                             </motion.p>
                             
@@ -237,7 +243,7 @@ return (
                     </div>
                     <div className='col-lg-12 col-md-12 col-ms-12 col-s-12 ' style={{ background: 'white', height: '200%', marginTop: '20%' }}>
                         <div className='col-lg-4 col-md-4 col-ms-4 col-s-4 '>
-                            <img src={CoeurArtificiel}  style={leftimgStyle} />
+                            <img src={CoeurArtificiel}  style={leftimgStyle} alt='' />
                         </div>
                         <div className='col-lg-5 col-md-5 col-ms-8 col-s-12 ' style={{ marginTop: top }}>
                             <motion.p
@@ -248,7 +254,7 @@ return (
                                 style={rightText}
                             >
                                 {/* <p style={{fontSize:fontSizeP}} >  */}
-                                <a style={{ fontSize: '25px', color: 'rgb(52, 152, 219)', textDecoration: 'none' }}> {t("Ventilator")} </a>, {t("t_Ventilator")} 
+                                <a style={{ fontSize: '25px', color: 'rgb(52, 152, 219)', textDecoration: 'none' }} href=''> {t("Ventilator")} </a>, {t("t_Ventilator")} 
                                 {/* </p> */}
                             </motion.p>                            
                         </div>
@@ -267,7 +273,7 @@ return (
                                 style={teftText}
                             >
                                 {/* <p style={{fontSize:fontSizeP}}>   */}
-                                <a style={{ fontSize: '25px', color: 'rgb(52, 152, 219)', textDecoration: 'none' }}> Diagnose me</a> <br/>{t( "text1-diagnoseMe")} {t( "text2-diagnoseMe")}
+                                <a style={{ fontSize: '25px', color: 'rgb(52, 152, 219)', textDecoration: 'none' }} href=''> Diagnose me</a> <br/>{t( "text1-diagnoseMe")} {t( "text2-diagnoseMe")}
                                 {/* </p> */}
                             </motion.p>
                             

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import img from "../../../assets/images/headerSteriwave.jpg";
 import useResizeScreen from "../../../utils/useResizeScreen";
 import { useTranslation } from "react-i18next";
@@ -26,13 +26,13 @@ const VideoHeader = () => {
     fontSize: "26px",
     fontWeight: "600",
   });
-  const [top, setTop] = useState("1%");
+
   const [textSize, setTextSize] = useState({ fontSize: "20px" });
  
   useEffect(() => {
 
     if (windowDimensions.width > 2200) {
-      setTop("0%");
+      
       setHeight(window.innerHeight);
       setTitleStyle({
         marginTop: "18%",
@@ -54,7 +54,7 @@ const VideoHeader = () => {
       });
       setTextSize({ fontSize: "30px" });
     } else if (windowDimensions.width > 2100 && windowDimensions.width < 2200) {
-      setTop("0%");
+     
       setHeight(window.innerHeight);
       setTitleStyle({
         marginTop: "18%",
@@ -76,7 +76,7 @@ const VideoHeader = () => {
       });
       setTextSize({ fontSize: "29px" });
     } else if (windowDimensions.width > 2000 && windowDimensions.width < 2100) {
-      setTop("0%");
+     
       setHeight(window.innerHeight);
       setTitleStyle({
         marginTop: "18%",
@@ -98,7 +98,7 @@ const VideoHeader = () => {
       });
       setTextSize({ fontSize: "28px" });
     } else if (windowDimensions.width > 1900 && windowDimensions.width < 2000) {
-      setTop("0%");
+     
       setHeight(window.innerHeight);
       setTitleStyle({
         marginTop: "18%",
@@ -120,7 +120,7 @@ const VideoHeader = () => {
       });
       setTextSize({ fontSize: "27px" });
     } else if (windowDimensions.width > 1800 && windowDimensions.width < 1900) {
-      setTop("0%");
+     
       setHeight(window.innerHeight);
       setTitleStyle({
         marginTop: "18%",
@@ -142,7 +142,7 @@ const VideoHeader = () => {
       });
       setTextSize({ fontSize: "26px" });
     } else if (windowDimensions.width > 1700 && windowDimensions.width < 1800) {
-      setTop("3%");
+    
       setHeight(window.innerHeight);
       setTitleStyle({
         marginTop: "16%",
@@ -164,7 +164,7 @@ const VideoHeader = () => {
       });
       setTextSize({ fontSize: "25px" });
     } else if (windowDimensions.width > 1600 && windowDimensions.width < 1700) {
-      setTop("0%");
+   
       setHeight(window.innerHeight);
       setTitleStyle({
         marginTop: "16%",
@@ -186,7 +186,7 @@ const VideoHeader = () => {
       });
       setTextSize({ fontSize: "25px" });
     } else if (windowDimensions.width > 1500 && windowDimensions.width < 1600) {
-      setTop("2%");
+
       setHeight(window.innerHeight);
       setTitleStyle({
         marginTop: "16%",
@@ -208,7 +208,7 @@ const VideoHeader = () => {
       });
       setTextSize({ fontSize: "25px" });
     } else if (windowDimensions.width > 1400 && windowDimensions.width < 1500) {
-      setTop("2%");
+
       setHeight(window.innerHeight);
       setTitleStyle({
         marginTop: "16%",
@@ -230,7 +230,7 @@ const VideoHeader = () => {
       });
       setTextSize({ fontSize: "25px" });
     } else if (windowDimensions.width > 1300 && windowDimensions.width < 1400) {
-      setTop("2%");
+
       setHeight(window.innerHeight);
       setTitleStyle({
         marginTop: "16%",
@@ -252,7 +252,7 @@ const VideoHeader = () => {
       });
       setTextSize({ fontSize: "25px" });
     } else if (windowDimensions.width > 1200 && windowDimensions.width < 1300) {
-      setTop("5%");
+
       setHeight(window.innerHeight);
             setTitleStyle({
         marginTop: "16%",
@@ -274,7 +274,7 @@ const VideoHeader = () => {
       });
       setTextSize({ fontSize: "25px" });
     } else if (windowDimensions.width > 1100 && windowDimensions.width < 1200) {
-      setTop("5%");
+ 
       setHeight(window.innerHeight);
       setTitleStyle({
         marginTop: "40%",
@@ -296,7 +296,7 @@ const VideoHeader = () => {
       });
       setTextSize({ fontSize: "25px" });
     } else if (windowDimensions.width > 1000 && windowDimensions.width < 1100) {
-      setTop("2%");
+
       setHeight(window.innerHeight);
       setTitleStyle({
         marginTop: "40%",
@@ -318,7 +318,7 @@ const VideoHeader = () => {
       });
       setTextSize({ fontSize: "25px" });
     } else if (windowDimensions.width > 900 && windowDimensions.width < 1000) {
-      setTop("2%");
+ 
       setHeight(window.innerHeight);
       setTitleStyle({
         marginTop: "50%",
@@ -340,7 +340,7 @@ const VideoHeader = () => {
       });
       setTextSize({ fontSize: "25px" });
     } else if (windowDimensions.width > 700 && windowDimensions.width < 900) {
-      setTop("2%");
+
       setHeight(window.innerHeight);
       setTitleStyle({
         marginTop: "38%",
@@ -362,7 +362,7 @@ const VideoHeader = () => {
       });
       setTextSize({ fontSize: "25px" });
     } else if (windowDimensions.width > 550 && windowDimensions.width < 700) {
-      setTop("2%");
+
       setHeight(window.innerHeight);
       setTitleStyle({
         marginTop: "45%",
@@ -384,7 +384,7 @@ const VideoHeader = () => {
       });
       setTextSize({ fontSize: "25px" });
     } else if (windowDimensions.width > 433 && windowDimensions.width < 550) {
-      setTop("2%");
+     
       setHeight(window.innerHeight);
       setTitleStyle({
         marginTop: "55%",
@@ -407,7 +407,7 @@ const VideoHeader = () => {
       setTextSize({ fontSize: "25px" });
     }
     else if (windowDimensions.width > 340 && windowDimensions.width < 433) {
-      setTop("-1%");
+  
       setHeight(window.innerHeight);
       setTitleStyle({
         marginTop: "55%",
@@ -429,7 +429,7 @@ const VideoHeader = () => {
       });
       setTextSize({ fontSize: "12px" });
     } else if (windowDimensions.width > 274 && windowDimensions.width < 340) {
-      setTop("-1%");
+  
       setHeight(window.innerHeight);
       setTitleStyle({
         marginTop: "45%",
@@ -452,7 +452,7 @@ const VideoHeader = () => {
       setTextSize({ fontSize: "9px" });
     }
     else if (windowDimensions.width > 100 && windowDimensions.width < 274) {
-      setTop("-1%");
+
       setHeight(window.innerHeight);
       setTitleStyle({
         marginTop: "55%",
@@ -474,8 +474,8 @@ const VideoHeader = () => {
       });
       setTextSize({ fontSize: "9px" });
     }
-    console.log(height);
-  }, [windowDimensions.width,]);
+
+  }, [windowDimensions.width,windowDimensions.height]);
 
   return (
     <div>

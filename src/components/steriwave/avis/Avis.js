@@ -24,7 +24,7 @@ function Avis() {
       <section className="about-section" style={{ marginTop: "-7%" }}>
         <div className="container">
           <div className="title-section">
-            <h1>{t("Avis")} <a style={{ color: 'rgb(52, 152, 219)', textDecoration: 'none' }}>{t("review")}</a></h1>
+            <h1>{t("Avis")} <a style={{ color: 'rgb(52, 152, 219)', textDecoration: 'none' }} href=''>{t("review")}</a></h1>
           </div>
           <div>
             <Rating

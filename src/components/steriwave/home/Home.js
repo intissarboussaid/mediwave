@@ -6,7 +6,7 @@ import Contact from "../../mediwave/contact/Contact";
 import Informations from '../discoverUS/Informations';
 import Video from '../videoSteriwave/video';
 import Tarification from '../../steriwave/tarification/Tarification';
-import Avis from '../avis/Avis';
+
 import Docs from '../docs/Docs';
 
 function SteriwaveHome() {

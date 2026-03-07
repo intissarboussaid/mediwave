@@ -4,7 +4,7 @@ import useResizeScreen from "../../../utils/useResizeScreen";
 import img from "../../../assets/images/headerSteriwave.jpg";
 const Footer = () => {
   const { t } = useTranslation();
-  const [top, setTop] =useState('5%');
+
   const windowDimensions = useResizeScreen();
   const [styleP, setStyleP] = useState({  transform: 'translate(20%, 100%)' });
   useEffect(() => {
@@ -41,17 +41,17 @@ if (windowDimensions.width > 1200 && windowDimensions.width <= 1300) {
               <div className="col-lg-4 col-md-4 col-s-12">
                 <ul className="social-icons" style={{ marginLeft: '12%', marginTop: '12%' }}>
                   <li>
-                    <a className="facebook">
+                    <a className="facebook" href="#">
                       <i className="fa-brands fa-facebook-f"></i>
                     </a>
                   </li>
                   <li>
-                    <a className="instagram">
+                    <a className="instagram" href="#">
                       <i className="fa-brands fa-instagram"></i>
                     </a>
                   </li>
                   <li>
-                    <a className="linkedin">
+                    <a className="linkedin" href="#">
                       <i className="fa-brands fa-linkedin-in"></i>
                     </a>
                   </li>

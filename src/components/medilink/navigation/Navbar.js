@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import mediwave from "../../../assets/images/logoMediwave.png";
+import { useEffect, useState } from "react";
+
 import useResizeScreen from "../../../utils/useResizeScreen";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
@@ -10,39 +10,39 @@ import flagUS from "../../../assets/images/flagUS.png";
 
 const Header = () => {
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
-  const [ccurrentLanguageCode, setCcurrentLanguageCode] = useState(cookies.get("i18next"));
+
   const handleLanguageChange = (code) => {
-    setCcurrentLanguageCode(cookies.get("i18next"));
+    cookies.get("i18next");
     i18next.changeLanguage(code);
   }
-  const [selectedOption, setSelectedOption] = useState('');
+
 
 
 
 const [left, setLeft]= useState('20%');
-  const { width, height } = useResizeScreen();
+  const { width} = useResizeScreen();
   const [widthImage, setWidthImage] = useState(150);
-  const [dropDown, setDropDown] = useState({
+  const [setDropDown] = useState({
     background:'rgba(130, 188, 228, 0.9)',
     border:'rgba(130, 188, 228, 0.9)',
     marginLeft:'none',
   });
-  const [styleImage, setStyleImage] = useState({ margin: "7%" });
+  const [setStyleImage] = useState({ margin: "7%" });
  
-  const IconlanguageStyle = {
-    fontSize: '22px',
-    color: 'white',
-    cursor: 'pointer',
-    background: 'transparent',
+  // const IconlanguageStyle = {
+  //   fontSize: '22px',
+  //   color: 'white',
+  //   cursor: 'pointer',
+  //   background: 'transparent',
 
 
-  };
-  const StyleFrEn = {
-    color: 'white',
-    cursor: 'pointer',
-    marginLeft:'7vh'
+  // };
+  // const StyleFrEn = {
+  //   color: 'white',
+  //   cursor: 'pointer',
+  //   marginLeft:'7vh'
 
-  };
+  // };
 
   // langages
   const languages = [
@@ -59,16 +59,16 @@ const [left, setLeft]= useState('20%');
 
   ];
 
-  const Ic_fr = () => <a style={{ color: 'white', textDecoration: 'none', cursor: 'pointer' }}> <img src={flagFR} style={{ width: '20px' }} /> FR</a>;
+  const IcFr = () => <a style={{ color: 'white', textDecoration: 'none', cursor: 'pointer' }} href=""> <img src={flagFR} style={{ width: '20px' }}  alt=""/> FR</a>;
 
-  const Ic_gb = () => <a style={{ color: 'white', textDecoration: 'none', cursor: 'pointer' }} > <img src={flagUS} style={{ width: '20px' }} /> US</a>;
+  const IcGb = () => <a style={{ color: 'white', textDecoration: 'none', cursor: 'pointer' }} href="" > <img src={flagUS} style={{ width: '20px' }} alt="" /> US</a>;
 
 
   const currentLanguageCode = cookies.get("i18next");
   const { t } = useTranslation();
   useEffect(() => {
     console.log(t("Welcome_to_React"));
-  }, []);
+  }, [t]);
 
   useEffect(() => {
     if (width >1200) {
@@ -172,7 +172,7 @@ else if(width <=1088 && width >  1080){
     console.log("i am");
     console.log(width);
     console.log(widthImage);
-  }, [width]);
+  }, [width,widthImage]);
 
   return (
     <div>
@@ -231,7 +231,7 @@ else if(width <=1088 && width >  1080){
                   </li>
                   <li >
                     <div className="titleDropdown" style={{ cursor: 'pointer' }} onClick={() => setIsDropdownVisible(!isDropdownVisible)}>
-                    {currentLanguageCode === "en" ? <Ic_gb /> : <Ic_fr />}  &#x2193;
+                    {currentLanguageCode === "en" ? <IcGb /> : <IcFr />}  &#x2193;
 
                     </div >
                   </li>
@@ -250,7 +250,7 @@ else if(width <=1088 && width >  1080){
                               opacity: code === currentLanguageCode ? 0.3 : 1,
                             }}
                           >
-                            {country_code === "fr" ? <Ic_fr /> : <Ic_gb />}
+                            {country_code === "fr" ? <IcFr /> : <IcGb />}
                           </div>
                         ))}
                       </div>
