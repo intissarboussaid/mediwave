@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useMemo,someProp} from "react";
 // import { Link } from "react-router-dom";
 // import useFetch from "./hooks/useFetch";
 import useResizeScreen from "../../../utils/useResizeScreen";
@@ -90,7 +90,7 @@ const DoctorLocalisation = () => {
   }
  }, [width,height]);
 
-  const data=[
+  const data= useMemo(() =>[
     {
       acts_et_soins: "acts et soins du medcin",
       adresse: "adresse sokra ",
@@ -218,9 +218,13 @@ const DoctorLocalisation = () => {
       alt="doctor"
       src={doctorImage5}/>
     },
-  ];
-
-  const filter = {};
+  ], []);
+  
+  const filter = useMemo(() => {
+    return {
+      genre: someProp,   // example: dynamic filter
+    };
+  },  [someProp]);
   // const handleFilters = (e) => {
   //   const value = e.target.value;
   //   setFielters({
@@ -238,7 +242,7 @@ const DoctorLocalisation = () => {
   useEffect(() => {
     console.log(items);
   }, [items]);
-  useEffect(() => {
+ useEffect(() => {
     setItems(
       data.filter((items) =>
         Object.entries(filter).every(([key, value]) =>
@@ -246,7 +250,8 @@ const DoctorLocalisation = () => {
         )
       )
     );
-  }, [data, filter]);
+  }, [filter, data]);
+
 
   return (
     <>

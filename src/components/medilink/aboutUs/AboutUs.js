@@ -304,7 +304,7 @@ function AboutUs() {
             marginLeft:'38%',
             marginTop: "15%",
             width:'100%',
-            marginLeft:'0%',
+            // marginLeft:'0%',
         });
         setImgStyle({
           width:'100%',

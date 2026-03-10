@@ -11,16 +11,16 @@ const useResizeScreen = () => {
       height,
     };
   }
-  const handleScreenStyle = () => {
-    console.log(windowDimensions);
-    if (windowDimensions.width < 800) {
-      console.log("hahahahah");
-    }
-  };
+  // const handleScreenStyle = () => {
+  //   console.log(windowDimensions);
+  //   if (windowDimensions.width < 800) {
+  //     console.log("hahahahah");
+  //   }
+  // };
   useEffect(() => {
     function handleResize() {
       setWindowDimensions(getWindowDimensions());
-      handleScreenStyle();
+      // handleScreenStyle();
     }
 
     window.addEventListener("resize", handleResize);

@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 import "./VideoHeader.css";
 
 const VideoHeader = () => {
-  const [viewportHeight, setViewportHeight] = useState(window.innerHeight);
+  // const [viewportHeight, setViewportHeight] = useState(window.innerHeight);
   const windowDimensions = useResizeScreen();
   const { t } = useTranslation();
   const [titleStyle, setTitleStyle] = useState({
@@ -28,7 +28,7 @@ const VideoHeader = () => {
   });
   const [textSize, setTextSize] = useState({ fontSize: "20px" });
   useEffect(() => {
-    setViewportHeight(window.innerHeight);
+    // setViewportHeight(window.innerHeight);
     if (windowDimensions.width > 2200) {
       // setHeight(window.innerHeight);
       setTitleStyle({
@@ -410,7 +410,7 @@ const VideoHeader = () => {
       });
       setTextSize({ fontSize: "9px" });
     }
-    console.log(viewportHeight);
+    // console.log(viewportHeight);
   }, [windowDimensions.width,]);
 
   return (

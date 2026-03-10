@@ -22,12 +22,12 @@ const Header = () => {
 const [left, setLeft]= useState('20%');
   const { width} = useResizeScreen();
   const [widthImage, setWidthImage] = useState(150);
-  const [setDropDown] = useState({
-    background:'rgba(130, 188, 228, 0.9)',
-    border:'rgba(130, 188, 228, 0.9)',
-    marginLeft:'none',
-  });
-  const [setStyleImage] = useState({ margin: "7%" });
+  // const [setDropDown] = useState({
+  //   background:'rgba(130, 188, 228, 0.9)',
+  //   border:'rgba(130, 188, 228, 0.9)',
+  //   marginLeft:'none',
+  // });
+  // const [setStyleImage] = useState({ margin: "7%" });
  
   // const IconlanguageStyle = {
   //   fontSize: '22px',
@@ -74,80 +74,81 @@ const [left, setLeft]= useState('20%');
     if (width >1200) {
       console.log("i sup between 1200");
       setWidthImage(100);
-      setStyleImage({ margin: "15%" });
-      setDropDown({
-        background:'rgba(130, 188, 228, 0.9)',
-        border:'rgba(130, 188, 228, 0.9)',
-        marginLeft:'none',
-      })
+      // setStyleImage({ margin: "15%" });
+      // setDropDown({
+      //   background:'rgba(130, 188, 228, 0.9)',
+      //   border:'rgba(130, 188, 228, 0.9)',
+      //   marginLeft:'none',
+      // })
     }
    else if (width < 1200 && width > 1000) {
       console.log("i am between 1200 and 1000");
       setWidthImage(100);
-      setStyleImage({ margin: "15%" });
-      setDropDown({
-        background:'rgba(130, 188, 228, 0.9)',
-        border:'rgba(130, 188, 228, 0.9)',
-        marginLeft:'none',
-      })
+      // setStyleImage({ margin: "15%" });
+      // setDropDown({
+      //   background:'rgba(130, 188, 228, 0.9)',
+      //   border:'rgba(130, 188, 228, 0.9)',
+      //   marginLeft:'none',
+      // })
     } else if (width > 1200) {
       setWidthImage(150);
-      setStyleImage({ margin: "7%" });
-         setDropDown({
-        background:'rgba(130, 188, 228, 0.9)',
-        border:'rgba(130, 188, 228, 0.9)',
-        marginLeft:'none',
-      })
+      // setStyleImage({ margin: "7%" });
+      //    setDropDown({
+      //   background:'rgba(130, 188, 228, 0.9)',
+      //   border:'rgba(130, 188, 228, 0.9)',
+      //   marginLeft:'none',
+      // })
     } else if (width < 769 && width >563)  {
       setWidthImage(90);
-      setStyleImage({ top: "9%" });
-      setDropDown({
-        background:'rgba(130, 188, 228, 0.9)',
-        border:'rgba(130, 188, 228, 0.9)',
-        marginLeft:'37%',
-        marginTop:'-5%',
-      })
+      // setStyleImage({ top: "9%" });
+      // setDropDown({
+      //   background:'rgba(130, 188, 228, 0.9)',
+      //   border:'rgba(130, 188, 228, 0.9)',
+      //   marginLeft:'37%',
+      //   marginTop:'-5%',
+      // })
     }
     else if (width < 562 && width> 444) {
       setWidthImage(90);
-      setStyleImage({ marginTop: "1%"});
-      setDropDown({
-        background:'rgba(130, 188, 228, 0.9)',
-        border:'rgba(130, 188, 228, 0.9)',
-        marginLeft:'37%',
-        marginTop:'-5%',
-    })
+      // setStyleImage({ marginTop: "1%"});
+    //   setDropDown({
+    //     background:'rgba(130, 188, 228, 0.9)',
+    //     border:'rgba(130, 188, 228, 0.9)',
+    //     marginLeft:'37%',
+    //     marginTop:'-5%',
+    // })
   }
     else if (width <  443 && width>228) {
       setWidthImage(90);
-      setStyleImage({ marginTop: "1%" });
-      setDropDown({
-        background:'rgba(130, 188, 228, 0.9)',
-        border:'rgba(130, 188, 228, 0.9)',
-        marginLeft:'28%',
-        marginTop:'-5%',
-    })    
+      // setStyleImage({ marginTop: "1%" });
+    //   setDropDown({
+    //     background:'rgba(130, 188, 228, 0.9)',
+    //     border:'rgba(130, 188, 228, 0.9)',
+    //     marginLeft:'28%',
+    //     marginTop:'-5%',
+    // })    
  }
  
  else if (width <228 && width >200) {
   setWidthImage(90);
-  setStyleImage({ marginTop: "6%" });
-  setDropDown({
-    background:'rgba(130, 188, 228, 0.9)',
-    border:'rgba(130, 188, 228, 0.9)',
-    marginLeft:'20%',
-    marginTop:'-5%',
-    width:'10px',
-})}else if (width <=200) {
+  // setStyleImage({ marginTop: "6%" });
+  // setDropDown({
+  //   background:'rgba(130, 188, 228, 0.9)',
+//     border:'rgba(130, 188, 228, 0.9)',
+//     marginLeft:'20%',
+//     marginTop:'-5%',
+//     width:'10px',
+// })
+}else if (width <=200) {
   setWidthImage(90);
-  setStyleImage({ marginTop: "-50%" });
-  setDropDown({
-    background:'rgba(130, 188, 228, 0.9)',
-    border:'rgba(130, 188, 228, 0.9)',
-    marginLeft:'20%',
-    marginTop:'-5%',
-    width:'10px',
-})
+  // setStyleImage({ marginTop: "-50%" });
+//   setDropDown({
+//     background:'rgba(130, 188, 228, 0.9)',
+//     border:'rgba(130, 188, 228, 0.9)',
+//     marginLeft:'20%',
+//     marginTop:'-5%',
+//     width:'10px',
+// })
 
 }if(width>1345){
   setLeft('0%')
@@ -172,7 +173,7 @@ else if(width <=1088 && width >  1080){
     console.log("i am");
     console.log(width);
     console.log(widthImage);
-  }, [width,widthImage,setStyleImage,setDropDown]);
+  }, [width,widthImage]);
 
   return (
     <div>

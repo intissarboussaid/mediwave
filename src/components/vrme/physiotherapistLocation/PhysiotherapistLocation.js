@@ -1,4 +1,4 @@
-import React, { useEffect,  useState } from "react";
+import React, { useEffect,  useState ,useMemo,someProp} from "react";
 import { Card } from "primereact/card";
 import useResizeScreen from "../../../utils/useResizeScreen";
 import { Avatar } from "primereact/avatar";
@@ -31,7 +31,7 @@ const PhysiotherapistLocalisation = () => {
     console.log(physiotherapist);
   }, [physiotherapist]);
 
-  const data=[
+  const data= useMemo(() =>[
     {
       acts_et_soins: "acts et soins du physio1",
       adresse: "adresse sokra ",
@@ -171,9 +171,13 @@ const PhysiotherapistLocalisation = () => {
       // width={100}
          />
     },
-  ];
+  ]);
 
-  const [filter, setFielters] = useState({});
+  const filter = useMemo(() => {
+    return {
+      genre: someProp,   // example: dynamic filter
+    };
+  }, [someProp]);
   // const handleFilters = (e) => {
   //   const value = e.target.value;
   //   setFielters({
@@ -181,7 +185,7 @@ const PhysiotherapistLocalisation = () => {
   //     [e.target.name]: value,
   //   });
   // };
-  const header = ([
+  const header = useMemo(() =>[
     {img: <img
       alt="Card"
       src={PhysiotherapistImage1}
@@ -226,7 +230,7 @@ const PhysiotherapistLocalisation = () => {
   useEffect(() => {
     console.log(items);
   }, [items]);
-  useEffect(() => {
+ useEffect(() => {
     setItems(
       data.filter((items) =>
         Object.entries(filter).every(([key, value]) =>
@@ -234,7 +238,8 @@ const PhysiotherapistLocalisation = () => {
         )
       )
     );
-  }, [data, filter]);
+  }, [filter, data]);
+
   const { width, height } = useResizeScreen();
   const [leftCard, setLeftCard] = useState('0%');
   const [styleLeft, setStyleLeft]=useState('0%');
@@ -274,7 +279,7 @@ const PhysiotherapistLocalisation = () => {
     setMarginLeftAvatar('10%')
   }
   
- }, [width]);
+ }, [width,height]);
 
 
   return (
