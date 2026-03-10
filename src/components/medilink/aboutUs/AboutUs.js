@@ -264,8 +264,7 @@ function AboutUs() {
         setTextStyle({
             marginLeft:'38%',
             marginTop: "15%",
-            width:'100%',
-            marginLeft:'0%',
+            width:'100%'
         });
         setImgStyle({
           width:'70%',
@@ -285,8 +284,7 @@ function AboutUs() {
         setTextStyle({
             marginLeft:'38%',
             marginTop: "15%",
-            width:'100%',
-            marginLeft:'0%',
+            width:'100%'
         });
         setImgStyle({
           width:'70%',
@@ -339,13 +337,13 @@ function AboutUs() {
             <div className="container" style={titleStyle}>
                 <div className="title-section">                
                     <h1 style={titleStyle}>{t("about")}
-                    <a style={{color:'rgb(52, 152, 219)', textDecoration:'none'}} href='#'> {t("us")}</a>
+                    <a style={{color:'rgb(52, 152, 219)', textDecoration:'none'}} href='/medilink'> {t("us")}</a>
                    </h1>              
                 </div>
                 <div className='contents'>
                     
                     <div className='col-md-2 col-ms-2'>
-                        <img src={img} style={imgStyle} alt='image'/>
+                        <img src={img} style={imgStyle} alt='about us'/>
                     </div>
                     <div  className='col-md-7 col-ms-7'style={textStyle}>
                 <motion.p
@@ -355,7 +353,7 @@ function AboutUs() {
                     whileTap={{ scale: 0.8}}
                     style={{ textAlign: "justify", marginTop: "0%" }}
                 >
-                       <a style={{color:'rgb(52, 152, 219)', textDecoration:'none', fontSize:'25px'}} href=''>    Medilink </a>
+                       <a style={{color:'rgb(52, 152, 219)', textDecoration:'none', fontSize:'25px'}} href='/medilink'>    Medilink </a>
                        {t("about-medilink-text1")}<br />
                     {t("about-medilink-text2")}<br />
                     {t("about-medilink-text3")}<br />

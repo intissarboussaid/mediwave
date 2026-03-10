@@ -360,7 +360,7 @@ setFontSizeP('16px');
             <div className="container">
                 <div className="title-section" style={{marginTop:'-15%'}}>                
                     <h1 style={titleStyle}>{t("about")}
-                    <a style={{color:'rgb(52, 152, 219)', textDecoration:'none'}} href=''> {t("us")}</a>
+                    <a style={{color:'rgb(52, 152, 219)', textDecoration:'none'}} href='/mediwave'> {t("us")}</a>
                    </h1>              
                 </div>
                 <div className='contents'>
@@ -376,7 +376,7 @@ setFontSizeP('16px');
                     whileTap={{ scale: 0.8}}
                     style={{ textAlign: "justify", marginTop: "7%",fontSize:fontSizeP }}
                 >
-                       <a style={{color:'rgb(52, 152, 219)', textDecoration:'none', fontSize:'25px'}} href=''> Mediwave</a>{t("about-us-text1")}<br />
+                       <a style={{color:'rgb(52, 152, 219)', textDecoration:'none', fontSize:'25px'}} href='/mediwave'> Mediwave</a>{t("about-us-text1")}<br />
                     {t("about-us-text2")}<br />
                     {t("about-us-text3")}<br />
                     {t("about-us-text4")}<br />

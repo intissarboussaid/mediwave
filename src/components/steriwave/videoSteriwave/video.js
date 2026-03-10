@@ -98,7 +98,7 @@ const Video = () => {
             <section className="about-section" style={{ marginTop: "5%" }}>
                 <div className="container">
                     <div className="title-section">
-                        <h1>{t("t-video1")} <a style={{ color: 'rgb(52, 152, 219)', textDecoration: 'none' }}>{t("t-video2")} </a></h1>
+                        <h1>{t("t-video1")} <a style={{ color: 'rgb(52, 152, 219)', textDecoration: 'none' }} href='steriwave#DiscoverOurSolution'>{t("t-video2")} </a></h1>
                     
                        
                     </div>

@@ -1,5 +1,5 @@
 
-import React, { useRef, useEffect, useState } from "react";
+import React, {  useEffect, useState } from "react";
 import Carousell from '../carouselStyle/Carousell.js';
 import "../differentTherapies/DifferentTherapies.css";
 import claustrophobie from "../../../assets/images/claustrophobie.jpg";
@@ -16,24 +16,24 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import useResizeScreen from "../../../utils/useResizeScreen";
 const DifferentTherapies = (props) => {
-  const CARDS = 10;
+
   const { t } = useTranslation();
-  const [openModal, setOpenModal] = useState(false);
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
-  const customStyles = {
-    content: {
-      top: '50%',
-      left: '50%',
-      right: 'auto',
-      bottom: 'auto',
-      width: '80%',
-      marginRight: '-50%',
-      transform: 'translate(-50%, -50%)',
-      boxShadow: '1px 2px #888888',
-    },
-  }
+  // const [openModal, setOpenModal] = useState(false);
+  // const [open, setOpen] = React.useState(false);
+  // const handleOpen = () => setOpen(true);
+  // const handleClose = () => setOpen(false);
+  // const customStyles = {
+  //   content: {
+  //     top: '50%',
+  //     left: '50%',
+  //     right: 'auto',
+  //     bottom: 'auto',
+  //     width: '80%',
+  //     marginRight: '-50%',
+  //     transform: 'translate(-50%, -50%)',
+  //     boxShadow: '1px 2px #888888',
+  //   },
+  // }
   const [imgSol, setImgSol] = useState();
   const [title, setTitle] = useState();
   const [textSol, setTextSol] = useState();
@@ -42,16 +42,16 @@ const DifferentTherapies = (props) => {
   const [textSol3, setTextSol3] = useState();
   const [widthStyle, setWidthStyle] = useState('100%');
   const [left, setLeft] = useState();
-  let subtitle;
-  const [modalIsOpen, setIsOpen] = React.useState(false);
+  // let subtitle;
+  // const [modalIsOpen, setIsOpen] = React.useState(false);
 
-  function openModal1() {
-    setIsOpen(true);
-  }
+  // function openModal1() {
+  //   setIsOpen(true);
+  // }
 
-  function closeModal1() {
-    setIsOpen(false);
-  }
+  // function closeModal1() {
+  //   setIsOpen(false);
+  // }
   const Card = ({ src, title, content, content1, content2, button }) => (
     <div className='card'>
       <div>{src}</div>
@@ -68,18 +68,18 @@ const DifferentTherapies = (props) => {
       }}>{button}</p>
     </div>
   );
-  const slideRef = useRef(null);
+  // const slideRef = useRef(null);
   const windowDimensions = useResizeScreen();
-  const [imageStyle1, setImageStyle1] = useState({
+  const imageStyle1={
     width: '105%',
     height: '40%',
     marginTop: '0%',
     marginLeft: '-2%'
-  });
-  const [imgSolstyle, setImgSolstyle] = useState({
-    width: '50%',
-    height: '40%',
-  });
+  };
+  // const [imgSolstyle, setImgSolstyle] = useState({
+  //   width: '50%',
+  //   height: '40%',
+  // });
   const data = [
     {
       id: 1,
@@ -100,7 +100,7 @@ const DifferentTherapies = (props) => {
           right: '30%'
         }}
         onClick={() => {
-          setImgSol(<img src={assenseur} style={{ width: '70%', marginLeft: '15%' }} />);
+          setImgSol(<img src={assenseur} style={{ width: '70%', marginLeft: '15%' }} alt="assenseur"/>);
           setTitle(t("soll"));
           setTextSol("");
           setTextSol1(t("APPLICATIONS_1"));
@@ -145,7 +145,7 @@ const DifferentTherapies = (props) => {
           right: '30%'
         }}
         onClick={() => {
-          setImgSol(<img src={acrophobieSolution} style={{ width: '70%', marginLeft: '15%' }} /> );
+          setImgSol(<img src={acrophobieSolution} style={{ width: '70%', marginLeft: '15%' }} alt="acrophobieSolution"/> );
           setTextSol("");
           setTextSol1(t("APPLICATIONS_2"));
           setTextSol2("");
@@ -186,7 +186,7 @@ const DifferentTherapies = (props) => {
           right: '30%'
         }}
         onClick={() => {
-          setImgSol(<img src={arachrophobieSolution} style={{ width: '70%', marginLeft: '15%' }} /> );
+          setImgSol(<img src={arachrophobieSolution} style={{ width: '70%', marginLeft: '15%' }} alt="arachrophobieSolution"/> );
           setTextSol("");
           setTextSol1(t("APPLICATIONS_3"));
           setTextSol2("")
@@ -223,7 +223,7 @@ const DifferentTherapies = (props) => {
           right: '30%'
         }}
         onClick={() => {
-          setImgSol(<img src={agoraSol} style={{ width: '70%', marginLeft: '15%' }} />);
+          setImgSol(<img src={agoraSol} style={{ width: '70%', marginLeft: '15%' }} alt="agoraSol" />);
 
           setTextSol(t("APPLICATIONS_4_1"));
           setTextSol1("");
@@ -263,7 +263,7 @@ const DifferentTherapies = (props) => {
           right: '30%'
         }}
         onClick={() => {
-          setImgSol( <img src={glossophobie} style={{ width: '70%', marginLeft: '15%' }} /> );
+          setImgSol( <img src={glossophobie} style={{ width: '70%', marginLeft: '15%' }} alt="glossophobie"/> );
           setTitle(t("soll"));
           setTextSol(t('SOCIAL_PHOBIA_Soll'));
           setTextSol1(t('SOCIAL_PHOBIA_Soll_1'));
@@ -332,7 +332,7 @@ const DifferentTherapies = (props) => {
                 {data.map((i) => (
                   <div key={i.id}>
                     <Card
-                      src={<img src={i.imgUrl} style={imageStyle1} />}
+                      src={<img src={i.imgUrl} style={imageStyle1} alt="phobia" />}
                       title={i.name}
                       content={i.text1}
                       content1={i.text2}
@@ -367,7 +367,7 @@ const DifferentTherapies = (props) => {
                   <div className="row" style={{ marginLeft: "2%", marginRight: "2%" }}>
 
                     {/* <div className="col-md-12 col-sm-8" style={{ marginTop: '-12%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}> */}
-                      <a style={{ fontSize: '16px', color: 'rgb(52, 152, 219)', textDecoration: 'none' }}> {textSol}</a>
+                      <a style={{ fontSize: '16px', color: 'rgb(52, 152, 219)', textDecoration: 'none' }} href="vrme#therapies-section"> {textSol}</a>
                    
                     <div className="col-md-12 col-sm-8" style={{ marginTop: '-10%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                       {textSol1}

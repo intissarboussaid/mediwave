@@ -21,7 +21,7 @@ function SymboleMediwave() {
          
          <a className='contanier text-position' href='/'>
         
-        <img  style={StyleImg.img} src={Mediwave}/>
+        <img  style={StyleImg.img} src={Mediwave} alt='mediwave'/>
         </a>
     </div>
      </>

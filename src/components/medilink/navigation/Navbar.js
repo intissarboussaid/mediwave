@@ -59,9 +59,9 @@ const [left, setLeft]= useState('20%');
 
   ];
 
-  const IcFr = () => <a style={{ color: 'white', textDecoration: 'none', cursor: 'pointer' }} href=""> <img src={flagFR} style={{ width: '20px' }}  alt=""/> FR</a>;
+  const IcFr = () => <div style={{ color: 'white', textDecoration: 'none', cursor: 'pointer' }} > <img src={flagFR} style={{ width: '20px' }}  alt=""/> FR</div>;
 
-  const IcGb = () => <a style={{ color: 'white', textDecoration: 'none', cursor: 'pointer' }} href="" > <img src={flagUS} style={{ width: '20px' }} alt="" /> US</a>;
+  const IcGb = () => <div style={{ color: 'white', textDecoration: 'none', cursor: 'pointer' }}  > <img src={flagUS} style={{ width: '20px' }} alt="" /> US</div>;
 
 
   const currentLanguageCode = cookies.get("i18next");
@@ -172,7 +172,7 @@ else if(width <=1088 && width >  1080){
     console.log("i am");
     console.log(width);
     console.log(widthImage);
-  }, [width,widthImage]);
+  }, [width,widthImage,setStyleImage,setDropDown]);
 
   return (
     <div>

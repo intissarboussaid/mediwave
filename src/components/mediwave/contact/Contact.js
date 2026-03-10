@@ -182,17 +182,17 @@ const Contact = () => {
                       </div>
                       <ul className="social-icons" style={{marginLeft:'12%', marginTop:'5%'}}>
                         <li>
-                          <a className="facebook" href="">
+                          <a className="facebook" href="#contact-section">
                             <i className="fa-brands fa-facebook-f"></i>
                           </a>
                         </li>
                         <li>
-                          <a className="instagram" href="">
+                          <a className="instagram" href="#contact-section">
                             <i className="fa-brands fa-instagram"></i>
                           </a>
                         </li>
                         <li>
-                          <a className="linkedin" href="">
+                          <a className="linkedin" href="#contact-section">
                             <i className="fa-brands fa-linkedin-in"></i>
                           </a>
                         </li>

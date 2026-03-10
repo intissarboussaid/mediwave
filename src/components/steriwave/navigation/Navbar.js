@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import mediwave from "../../../assets/images/logoMediwave.png";
+
 import useResizeScreen from "../../../utils/useResizeScreen";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
@@ -11,38 +11,38 @@ import flagUS from "../../../assets/images/flagUS.png";
 
 const Header = () => {
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
-  const [ccurrentLanguageCode, setCcurrentLanguageCode] = useState(cookies.get("i18next"));
+  // const [ccurrentLanguageCode, setCcurrentLanguageCode] = useState(cookies.get("i18next"));
   const handleLanguageChange = (code) => {
-    setCcurrentLanguageCode(cookies.get("i18next"));
+    cookies.get("i18next");
     i18next.changeLanguage(code);
   }
 
   const { width, height } = useResizeScreen();
-  const [widthImage, setWidthImage] = useState(150);
+  // const [widthImage, setWidthImage] = useState(150);
   const [marginTop, setMarginTop] = useState();
-  const [dropDown, setDropDown] = useState({
-    background: 'rgba(114, 192, 238, 0.8)',
-    border: 'rgba(114, 192, 238, 0.8)',
-    marginLeft: 'none',
-  });
+  // const [dropDown, setDropDown] = useState({
+  //   background: 'rgba(114, 192, 238, 0.8)',
+  //   border: 'rgba(114, 192, 238, 0.8)',
+  //   marginLeft: 'none',
+  // });
   const [left, setLeft] = useState();
   const [marginleft, setMarginleft] = useState('20%');
-  const [styleImage, setStyleImage] = useState({ margin: "7%" });
+  // const [styleImage, setStyleImage] = useState({ margin: "7%" });
 
-  const IconlanguageStyle = {
-    fontSize: '22px',
-    color: 'white',
-    cursor: 'pointer',
-    background: 'transparent',
+  // const IconlanguageStyle = {
+  //   fontSize: '22px',
+  //   color: 'white',
+  //   cursor: 'pointer',
+  //   background: 'transparent',
 
 
-  };
-  const StyleFrEn = {
-    color: 'white',
-    cursor: 'pointer',
-    marginLeft: '7vh'
+  // };
+  // const StyleFrEn = {
+  //   color: 'white',
+  //   cursor: 'pointer',
+  //   marginLeft: '7vh'
 
-  };
+  // };
 
   // langages
   const languages = [
@@ -59,146 +59,148 @@ const Header = () => {
 
   ];
 
-  const Ic_fr = () => <a style={{ color: 'white', textDecoration: 'none', cursor: 'pointer' }}> <img src={flagFR} style={{ width: '20px' }} /> FR</a>;
+  const IcFr = () => <div style={{ color: 'white', textDecoration: 'none', cursor: 'pointer' }}> <img src={flagFR} style={{ width: '20px' }} alt="fr" /> FR</div>;
 
-  const Ic_gb = () => <a style={{ color: 'white', textDecoration: 'none', cursor: 'pointer' }} > <img src={flagUS} style={{ width: '20px' }} /> US</a>;
+  const IcGb = () => <div style={{ color: 'white', textDecoration: 'none', cursor: 'pointer' }} > <img src={flagUS} style={{ width: '20px' }} alt="us" /> US</div>;
 
 
   const currentLanguageCode = cookies.get("i18next");
   const { t } = useTranslation();
-  useEffect(() => {
-    console.log(t("Welcome_to_React"));
-  }, []);
+  // useEffect(() => {
+  //   console.log(t("Welcome_to_React"));
+  // }, []);
 
   useEffect(() => {
     if (width > 1400) {
       console.log("i am sup 1400 ");
-      setWidthImage(150);
-      setStyleImage({
-        marginLeft: '-100%',
-        marginTop: '15%',
-      });
-      setDropDown({
-        background: 'rgba(114, 192, 238, 0.8)',
-        border: 'rgba(114, 192, 238, 0.8)',
-        marginLeft: 'none',
-      })
+      height('auto')
+      // setWidthImage(150);
+      // setStyleImage({
+      //   marginLeft: '-100%',
+      //   marginTop: '15%',
+      // });
+      // setDropDown({
+      //   background: 'rgba(114, 192, 238, 0.8)',
+      //   border: 'rgba(114, 192, 238, 0.8)',
+      //   marginLeft: 'none',
+      // })
     }else if (width < 1400 && width > 1200) {
         console.log("i am bettwen  1400 et 1200 ");
-        setWidthImage(150);
-        setStyleImage({
-          marginLeft: '70%',
-          marginTop: '15%',
-        });
-        setDropDown({
-          background: 'rgba(114, 192, 238, 0.8)',
-          border: 'rgba(114, 192, 238, 0.8)',
-          marginLeft: 'none',
-        })
+        // setWidthImage(150);
+        // setStyleImage({
+        //   marginLeft: '70%',
+        //   marginTop: '15%',
+        // });
+        // setDropDown({
+        //   background: 'rgba(114, 192, 238, 0.8)',
+        //   border: 'rgba(114, 192, 238, 0.8)',
+        //   marginLeft: 'none',
+        // })
       }
       else if (width < 1228 && width > 1199) {
         setLeft('120%');
       }
     else if (width < 1200 && width > 1000) {
       console.log("i am between 1200 and 1000");
-      setWidthImage(50);
-      setStyleImage({
-        marginLeft: '80%',
-        marginTop: '15%',
-        height:'40%'
-      });
-      setDropDown({
-        background: 'rgba(114, 192, 238, 0.8)',
-        border: 'rgba(114, 192, 238, 0.8)',
-        marginLeft: 'none',
-      })
+      // setWidthImage(50);
+      // setStyleImage({
+      //   marginLeft: '80%',
+      //   marginTop: '15%',
+      //   height:'40%'
+      // });
+      // setDropDown({
+      //   background: 'rgba(114, 192, 238, 0.8)',
+      //   border: 'rgba(114, 192, 238, 0.8)',
+      //   marginLeft: 'none',
+      // })
     } else if (width < 1000 && width > 771) {
-      setWidthImage(150);
-      setStyleImage({
-        marginLeft: '70%',
-        marginTop: '25%',
-      });
-      setDropDown({
-        background: 'rgba(114, 192, 238, 0.8)',
-    border: 'rgba(114, 192, 238, 0.8)',
-        marginLeft: 'none',
-      })}
+      // setWidthImage(150);
+      // setStyleImage({
+      //   marginLeft: '70%',
+      //   marginTop: '25%',
+      // });
+    //   setDropDown({
+    //     background: 'rgba(114, 192, 238, 0.8)',
+    // border: 'rgba(114, 192, 238, 0.8)',
+    //     marginLeft: 'none',
+      // })
+      }
       else if (width < 771 && width > 760) {
-        setWidthImage(100);
-        setStyleImage({
-          marginLeft: '100%',
-          marginTop: '4%',
-        });
-        setDropDown({
-          background: 'rgba(114, 192, 238, 0.8)',
-          border: 'rgba(114, 192, 238, 0.8)',
-          marginLeft: '37%',
-          marginTop: '-5%',
-        })
+        // setWidthImage(100);
+        // setStyleImage({
+        //   marginLeft: '100%',
+        //   marginTop: '4%',
+        // });
+        // setDropDown({
+        //   background: 'rgba(114, 192, 238, 0.8)',
+        //   border: 'rgba(114, 192, 238, 0.8)',
+        //   marginLeft: '37%',
+        //   marginTop: '-5%',
+        // })
       }
     
     else if (width < 760 && width > 724) {
-      setWidthImage(100);
-      setStyleImage({
-        marginLeft: '10%',
-        marginTop: '-15%',
-      });
-      setDropDown({
-        background: 'rgba(114, 192, 238, 0.8)',
-        border: 'rgba(114, 192, 238, 0.8)',
-        marginLeft: '37%',
-        marginTop: '-5%',
-      })
+      // setWidthImage(100);
+      // setStyleImage({
+      //   marginLeft: '10%',
+      //   marginTop: '-15%',
+      // });
+      // setDropDown({
+      //   background: 'rgba(114, 192, 238, 0.8)',
+      //   border: 'rgba(114, 192, 238, 0.8)',
+      //   marginLeft: '37%',
+      //   marginTop: '-5%',
+      // })
     }
      else if (width < 724 && width > 563) {
-      setWidthImage(500);
-      setStyleImage({
-        marginLeft: '10%',
-        marginTop: '-17%',
-      });
-      setDropDown({
-        background: 'rgba(114, 192, 238, 0.8)',
-        border: 'rgba(114, 192, 238, 0.8)',
-        marginLeft: '37%',
-        marginTop: '-5%',
-      })
+      // setWidthImage(500);
+      // setStyleImage({
+      //   marginLeft: '10%',
+      //   marginTop: '-17%',
+      // });
+      // setDropDown({
+      //   background: 'rgba(114, 192, 238, 0.8)',
+      //   border: 'rgba(114, 192, 238, 0.8)',
+      //   marginLeft: '37%',
+      //   marginTop: '-5%',
+      // })
     }
     else if (width < 562 && width > 444) {
-      setWidthImage(90);
-      setStyleImage({
-        marginLeft: '10%',
-        marginTop: '-20%',
-      });
-      setStyleImage({ marginTop: "-23%" });
-      setDropDown({
-        background: 'rgba(114, 192, 238, 0.8)',
-    border: 'rgba(114, 192, 238, 0.8)',
-        marginLeft: '37%',
-        marginTop: '-5%',
-      })
+      // setWidthImage(90);
+      // setStyleImage({
+      //   marginLeft: '10%',
+      //   marginTop: '-20%',
+      // });
+      // setStyleImage({ marginTop: "-23%" });
+    //   setDropDown({
+    //     background: 'rgba(114, 192, 238, 0.8)',
+    // border: 'rgba(114, 192, 238, 0.8)',
+    //     marginLeft: '37%',
+    //     marginTop: '-5%',
+    //   })
     }
     else if (width < 443 && width > 228) {
-      setWidthImage(90);
-      setStyleImage( {display:'none' });
-      setDropDown({
-        background: 'rgba(114, 192, 238, 0.8)',
-        border: 'rgba(114, 192, 238, 0.8)',
-        marginLeft: '28%',
-        marginTop: '-5%',
-      })
+      // setWidthImage(90);
+      // setStyleImage( {display:'none' });
+      // setDropDown({
+      //   background: 'rgba(114, 192, 238, 0.8)',
+      //   border: 'rgba(114, 192, 238, 0.8)',
+      //   marginLeft: '28%',
+      //   marginTop: '-5%',
+      // })
 
     }
 
     else if (width < 228) {
-      setWidthImage(90);
-      setStyleImage( {display:'none' });
-      setDropDown({
-        background: 'rgba(114, 192, 238, 0.8)',
-    border: 'rgba(114, 192, 238, 0.8)',
-        marginLeft: '20%',
-        marginTop: '-5%',
-        width: '10px',
-      })
+      // setWidthImage(90);
+      // setStyleImage( {display:'none' });
+    //   setDropDown({
+    //     background: 'rgba(114, 192, 238, 0.8)',
+    // border: 'rgba(114, 192, 238, 0.8)',
+    //     marginLeft: '20%',
+    //     marginTop: '-5%',
+    //     width: '10px',
+    //   })
     } if(width>1345){
       setMarginleft('0%')
     }else if(width >= 1100 && width <= 1345){
@@ -217,10 +219,10 @@ const Header = () => {
       setMarginTop('-3%')
     }
 
-    console.log("i am");
-    console.log(width);
-    console.log(widthImage);
-  }, [width]);
+    // console.log("i am");
+    // console.log(width);
+    // console.log(widthImage);
+  }, [width,height]);
 
   return (
     <div>
@@ -282,7 +284,7 @@ const Header = () => {
                   </li>
                   <li >
                     <div className="titleDropdown"  style={{ cursor: 'pointer', marginTop:marginTop }} onClick={() => setIsDropdownVisible(!isDropdownVisible)}>
-                    {currentLanguageCode === "en" ? <Ic_gb /> : <Ic_fr />}  &#x2193;
+                    {currentLanguageCode === "en" ? <IcGb /> : <IcFr />}  &#x2193;
 
                     </div>
                   </li>
@@ -301,7 +303,7 @@ const Header = () => {
                               opacity: code === currentLanguageCode ? 0.3 : 1,
                             }}
                           >
-                            {country_code === "fr" ? <Ic_fr /> : <Ic_gb />}
+                            {country_code === "fr" ? <IcFr /> : <IcGb />}
                           </div>
                         ))}
                       </div>

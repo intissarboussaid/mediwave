@@ -42,9 +42,9 @@ const Header = () => {
 
   ];
 
-  const IcFr = () => <a style={{color:'white', textDecoration:'none' ,cursor:'pointer' }} href=""> <img src={flagFR} style={{width:'20px'}} alt=""/> FR</a>;
+  const IcFr = () => <div style={{color:'white', textDecoration:'none' ,cursor:'pointer' }} > <img src={flagFR} style={{width:'20px'}} alt=""/> FR</div>;
 
-  const IcGb = () => <a style={{color:'white', textDecoration:'none',cursor:'pointer' }} href="" > <img src={flagUS} style={{width:'20px'}} alt=""/> US</a>;
+  const IcGb = () => <div style={{color:'white', textDecoration:'none',cursor:'pointer' }}  > <img src={flagUS} style={{width:'20px'}} alt=""/> US</div>;
 
   const currentLanguageCode = cookies.get("i18next");
   const { t } = useTranslation();

@@ -11,9 +11,9 @@ import flagUS from "../../../assets/images/flagUS.png";
 const Header = () => {
 
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
-  const [ccurrentLanguageCode, setCcurrentLanguageCode] = useState(cookies.get("i18next"));
+  // const [ccurrentLanguageCode, setCcurrentLanguageCode] = useState(cookies.get("i18next"));
   const handleLanguageChange = (code) => {
-    setCcurrentLanguageCode(cookies.get("i18next"));
+   cookies.get("i18next");
     i18next.changeLanguage(code);
   }
 const [marginleft, setMarginleft]=useState('20%');
@@ -31,10 +31,11 @@ const [marginleft, setMarginleft]=useState('20%');
     contact: "",
   });
 
-  const [navbarInder, setNavbarInder] = useState('');
+  // const [navbarInder, setNavbarInder] = useState('');
 
   const ChangeInderline = () => {
     if (window.scrollY <= 200) {
+      height('auto')
       setActive({
         home: "active",
         therapies: "",
@@ -45,7 +46,7 @@ const [marginleft, setMarginleft]=useState('20%');
         blog: "",
         contact: "",
       })
-      setNavbarInder('active.home + " " + "navItemStyle"');
+      // setNavbarInder('active.home + " " + "navItemStyle"');
       console.log('home ')
     } else if (window.scrollY >= 250 && window.scrollY <= 1300) {
 
@@ -59,7 +60,7 @@ const [marginleft, setMarginleft]=useState('20%');
         blog: "",
         contact: "",
       })
-      setNavbarInder('active.therapies + " " + "navItemStyle"');
+      // setNavbarInder('active.therapies + " " + "navItemStyle"');
       console.log('therapies')
     }
     else if (window.scrollY >= 1350 && window.scrollY <= 2299) {
@@ -73,7 +74,7 @@ const [marginleft, setMarginleft]=useState('20%');
         blog: "",
         contact: "",
       })
-      setNavbarInder('active.doctors + " " + "navItemStyle"');
+      // setNavbarInder('active.doctors + " " + "navItemStyle"');
       console.log('doctors')
     }
     else if (window.scrollY >= 2300 && window.scrollY <= 3450) {
@@ -88,7 +89,7 @@ const [marginleft, setMarginleft]=useState('20%');
         contact: "",
 
       })
-      setNavbarInder('active.physiotherapyVR + " " + "navItemStyle"');
+      // setNavbarInder('active.physiotherapyVR + " " + "navItemStyle"');
       console.log('physiotherapyVR')
 
     }
@@ -103,7 +104,7 @@ const [marginleft, setMarginleft]=useState('20%');
         blog: "",
         contact: "",
       })
-      setNavbarInder('active.physiotherapist + " " + "navItemStyle"');
+      // setNavbarInder('active.physiotherapist + " " + "navItemStyle"');
       console.log('physiotherapist')
     }
     else if (window.scrollY >= 4500 && window.scrollY <= 5000) {
@@ -117,7 +118,7 @@ const [marginleft, setMarginleft]=useState('20%');
         blog: "",
         contact: "",
       })
-      setNavbarInder('active.pricing + " " + "navItemStyle"');
+      // setNavbarInder('active.pricing + " " + "navItemStyle"');
       console.log('pricing')
     }
     else if (window.scrollY >= 5000 && window.scrollY <= 7000) {
@@ -131,7 +132,7 @@ const [marginleft, setMarginleft]=useState('20%');
         blog: "active",
         contact: "",
       })
-      setNavbarInder('active.active + " " + "navItemStyle"');
+      // setNavbarInder('active.active + " " + "navItemStyle"');
       console.log('active')
     }
     else if (window.scrollY >= 7000) {
@@ -145,7 +146,7 @@ const [marginleft, setMarginleft]=useState('20%');
         blog: "",
         contact: "active",
       })
-      setNavbarInder('active.contact + " " + "navItemStyle"');
+      // setNavbarInder('active.contact + " " + "navItemStyle"');
       console.log('contact')
     }
   };
@@ -165,16 +166,16 @@ const [marginleft, setMarginleft]=useState('20%');
     },
 
   ];
-  const Ic_fr = () => <a style={{ color: 'white', textDecoration: 'none', cursor: 'pointer' }}> <img src={flagFR} style={{ width: '20px' }} /> FR</a>;
+  const IcFr = () => <div style={{ color: 'white', textDecoration: 'none', cursor: 'pointer' }}> <img src={flagFR} style={{ width: '20px' }} alt="FR" /> FR</div>;
 
-  const Ic_gb = () => <a style={{ color: 'white', textDecoration: 'none', cursor: 'pointer' }} > <img src={flagUS} style={{ width: '20px' }} /> US</a>;
+  const IcGb = () => <div style={{ color: 'white', textDecoration: 'none', cursor: 'pointer' }} > <img src={flagUS} style={{ width: '20px' }} alt="US" /> US</div>;
 
 
   const currentLanguageCode = cookies.get("i18next");
   const { t } = useTranslation();
-  useEffect(() => {
-    console.log(t("Welcome_to_React"));
-  }, []);
+  // useEffect(() => {
+  //   console.log(t("Welcome_to_React"));
+  // }, []);
 
   useEffect(() => {
     if (width < 1200 && width > 1000) {
@@ -209,8 +210,8 @@ const [marginleft, setMarginleft]=useState('20%');
       setMarginleft('20%');
     }
     console.log("i am");
-    console.log(width);
-    console.log(widthImage);
+    // console.log(width);
+    // console.log(widthImage);
   }, [width]);
 
   return (
@@ -262,9 +263,9 @@ const [marginleft, setMarginleft]=useState('20%');
                     }
                   >
                     <a
-                      className={active.home + " " + "navItemStyle"}
-                      href="#home-section"
-                    >
+  className={active.home + " navItemStyle"}
+  href="#home-section"
+>
                       {t("h_1")}
                     </a>
                   </li>
@@ -284,7 +285,7 @@ const [marginleft, setMarginleft]=useState('20%');
                   >
                     <a
                       href="#therapies-section"
-                      className={active.therapies + " " + "navItemStyle"}
+                      className={active.therapies  + "navItemStyle"}
                     >
                       {t("h_2")}
                     </a>
@@ -306,7 +307,7 @@ const [marginleft, setMarginleft]=useState('20%');
                   >
                     <a
                       href="#doctor-section"
-                      className={active.doctors + " " + "navItemStyle"}
+                      className={active.doctors + "navItemStyle"}
                     >
                       Doctors
                     </a>
@@ -327,7 +328,7 @@ const [marginleft, setMarginleft]=useState('20%');
                   >
                     <a
                       href="#physiotherapies-section"
-                      className={active.physiotherapies + " " + "navItemStyle"}
+                      className={active.physiotherapies + "navItemStyle"}
                     >
                       {" "}
                       {t("h_5")}
@@ -349,7 +350,7 @@ const [marginleft, setMarginleft]=useState('20%');
                   >
                     <a
                       href="#physiotherapist-section"
-                      className={active.physiotherapist + " " + "navItemStyle"}
+                      className={active.physiotherapist + "navItemStyle"}
                     >
                       {" "}
                       {t("h_4")}
@@ -371,7 +372,7 @@ const [marginleft, setMarginleft]=useState('20%');
                     }
                   >
                     <a
-                      className={active.pricing + " " + "navItemStyle"}
+                      className={active.pricing + "navItemStyle"}
                       href="#tarification-section"
                     >
                       {t("f_3")}
@@ -394,7 +395,7 @@ const [marginleft, setMarginleft]=useState('20%');
                   >
                     <a
                       href="#blog-section"
-                      className={active.blog + " " + "navItemStyle"}
+                      className={active.blog  + "navItemStyle"}
                     >
                       Blog
                     </a>
@@ -416,14 +417,14 @@ const [marginleft, setMarginleft]=useState('20%');
 
                     <a
                       href="#contact-section"
-                      className={active.contact + " " + "navItemStyle"}
+                      className={active.contact+ "navItemStyle"}
                     >
                       Contact
                     </a>
                   </li>
                      <li >
                     <div className="titleDropdownVRME"  style={{cursor:'pointer'}} onClick={() => setIsDropdownVisible(!isDropdownVisible)}>
-                      {currentLanguageCode === "en" ? <Ic_gb /> : <Ic_fr />}  &#x2193;                     
+                      {currentLanguageCode === "en" ? <IcGb /> : <IcFr />}  &#x2193;                     
                     </div>          
                   </li>
                   {isDropdownVisible && (
@@ -442,7 +443,7 @@ const [marginleft, setMarginleft]=useState('20%');
                              
                             }}
                           >
-                            {country_code === "fr" ? <Ic_fr /> : <Ic_gb />}
+                            {country_code === "fr" ? <IcFr /> : <IcGb />}
                           </div>
                         ))}
                       </div>

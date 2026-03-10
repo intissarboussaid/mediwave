@@ -197,7 +197,7 @@ return (
         <section className="about-section" style={{ marginTop: "-8%" }}>
             <div className="container">
             <div className="title-section">
-             <h1 >R <a style={{ color: 'rgb(52, 152, 219)', textDecoration: 'none' }} href=''>&</a>  D</h1>
+             <h1 >R <a style={{ color: 'rgb(52, 152, 219)', textDecoration: 'none' }} href='#ResearchAndDevelopment'>&</a>  D</h1>
           </div>
                 <div>
                     <div className='col-lg-12 col-md-12 col-ms-12 col-s-12 ' style={{ background: 'white', height: '200%', marginTop: '17%' }}>
@@ -213,7 +213,7 @@ return (
                                 style={rightText}
                             >
                                 {/* <p style={{fontSize:fontSizeP}}> */}
-                                    <a style={{ fontSize: '25px', color: 'rgb(52, 152, 219)', textDecoration: 'none' }} href=''>  {t("Syringe_Pump")}</a> ,{t("t_Syringe_Pump")}
+                                    <a style={{ fontSize: '25px', color: 'rgb(52, 152, 219)', textDecoration: 'none' }} href='#ResearchAndDevelopment'>  {t("Syringe_Pump")}</a> ,{t("t_Syringe_Pump")}
                                     {/* </p> */}
                             </motion.p>
 
@@ -234,7 +234,7 @@ return (
                                 style={teftText}
                             >
                                 {/* <p style={{fontSize:fontSizeP}}>   */}
-                                <a style={{ fontSize: '25px', color: 'rgb(52, 152, 219)', textDecoration: 'none' }} href=''> {t("Heart_Artificial")}</a>,{t("t_Heart_Artificial")}
+                                <a style={{ fontSize: '25px', color: 'rgb(52, 152, 219)', textDecoration: 'none' }} href='#ResearchAndDevelopment'> {t("Heart_Artificial")}</a>,{t("t_Heart_Artificial")}
                                 {/* </p> */}
                             </motion.p>
                             
@@ -254,7 +254,7 @@ return (
                                 style={rightText}
                             >
                                 {/* <p style={{fontSize:fontSizeP}} >  */}
-                                <a style={{ fontSize: '25px', color: 'rgb(52, 152, 219)', textDecoration: 'none' }} href=''> {t("Ventilator")} </a>, {t("t_Ventilator")} 
+                                <a style={{ fontSize: '25px', color: 'rgb(52, 152, 219)', textDecoration: 'none' }} href='#ResearchAndDevelopment'> {t("Ventilator")} </a>, {t("t_Ventilator")} 
                                 {/* </p> */}
                             </motion.p>                            
                         </div>
@@ -273,7 +273,7 @@ return (
                                 style={teftText}
                             >
                                 {/* <p style={{fontSize:fontSizeP}}>   */}
-                                <a style={{ fontSize: '25px', color: 'rgb(52, 152, 219)', textDecoration: 'none' }} href=''> Diagnose me</a> <br/>{t( "text1-diagnoseMe")} {t( "text2-diagnoseMe")}
+                                <a style={{ fontSize: '25px', color: 'rgb(52, 152, 219)', textDecoration: 'none' }} href='#ResearchAndDevelopment'> Diagnose me</a> <br/>{t( "text1-diagnoseMe")} {t( "text2-diagnoseMe")}
                                 {/* </p> */}
                             </motion.p>
                             

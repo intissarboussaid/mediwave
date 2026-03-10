@@ -220,7 +220,7 @@ if (windowDimensions.width < 290) {
         <div className="row" style={{ marginTop: "2%" }}>
 
           <div className="title-section">
-            <h1 style={titleStyle} >{t("our")}<a style={{ color: 'rgb(52, 152, 219)', textDecoration: 'none' }} href=""> Partenaires</a></h1>
+            <h1 style={titleStyle} >{t("our")}<a style={{ color: 'rgb(52, 152, 219)', textDecoration: 'none' }} href="#Partenaires"> Partenaires</a></h1>
           </div>
           <p className="" style={{ marginButtom: '70px' }}> 
           </p>

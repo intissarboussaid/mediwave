@@ -29,6 +29,7 @@ const Blog = () => {
                   <h2>
                     <a
                       target="_blank" 
+                      rel="noreferrer"
                       href="https://www.verywellmind.com/virtual-reality-exposure-therapy-vret-2797340">
                       {t("blog1")}
                     </a>
@@ -40,6 +41,7 @@ const Blog = () => {
                   </p>
                   <a className="read-more"
                      target="_blank" 
+                     rel="noreferrer"
                      href="https://www.verywellmind.com/virtual-reality-exposure-therapy-vret-2797340">
                     {t("Learn")}
                   </a>
@@ -56,7 +58,7 @@ const Blog = () => {
                   </div>
                   <h2>
                     <a target="_blank" 
-
+rel="noreferrer"
                     href="https://www.circuitstream.com/blog/virtual-reality-therapy">
                       {t("blog2")}
                     </a>
@@ -66,7 +68,7 @@ const Blog = () => {
                     <br/>
                     <br/>
                   </p>
-                  <a className="read-more" target="_blank"  href="https://www.circuitstream.com/blog/virtual-reality-therapy">
+                  <a className="read-more" target="_blank" rel="noreferrer"  href="https://www.circuitstream.com/blog/virtual-reality-therapy">
                   {t("Learn")}
                   </a>
                 </motion.div>
@@ -81,7 +83,7 @@ const Blog = () => {
                     <img src={blog3} className="col-md-6" alt="" height={250}  />
                   </div>
                   <h2>
-                    <a target="_blank" href="https://www.annualreviews.org/doi/abs/10.1146/annurev-clinpsy-081219-115923">
+                    <a target="_blank" rel="noreferrer" href="https://www.annualreviews.org/doi/abs/10.1146/annurev-clinpsy-081219-115923">
                      {t("blog3")}
                     </a>
                   </h2>
@@ -91,6 +93,7 @@ const Blog = () => {
                   <a className="read-more" 
                   href="https://www.annualreviews.org/doi/abs/10.1146/annurev-clinpsy-081219-115923"
                   target="_blank" 
+                  rel="noreferrer"
                   >
                    {t("Learn")}
                   </a>

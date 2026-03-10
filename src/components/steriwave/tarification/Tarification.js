@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import tarification from "../../../assets/images/tarification.png";
 import emailjs from "@emailjs/browser";
 import { useTranslation } from "react-i18next";
@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 const Tarification = () => {
   const form = useRef();
   const { t } = useTranslation();
-  const [formValue, setFormValue] = useState("");
+  // const [formValue, setFormValue] = useState("");
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
@@ -37,7 +37,7 @@ const Tarification = () => {
            <div className="title-section">
 
                     <h1 > {t('PRICING1')}
-                    <a style={{color:'rgb(52, 152, 219)', textDecoration:'none'}}>  {t('PRICING2')}</a>
+                    <a style={{color:'rgb(52, 152, 219)', textDecoration:'none'}} href="steriwave#tarification-section">  {t('PRICING2')}</a>
                    </h1>                   </div>
           <div className="services-box">
             <div className="row">

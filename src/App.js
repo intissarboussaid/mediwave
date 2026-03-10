@@ -5,7 +5,7 @@ import "./App.css";
 import "primereact/resources/themes/lara-light-indigo/theme.css";
 import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
-import { Routes, Route,  HashRouter } from 'react-router-dom';
+import { Route,   BrowserRouter,Routes } from 'react-router-dom';
 import HomeMediwave from "../src/components/mediwave/AppMediwave/App";
 import PageHomeVRme  from "../src/components/vrme/PageHomeVRme"
 import SteriwaveHome from "./components/steriwave/home/Home";
@@ -16,16 +16,15 @@ const App = () => {
 
 
   return (
-    <div id="container">
-       <HashRouter>
+ <div id="container">
+       <BrowserRouter>
         <Routes>
-          // "build": "react-scripts build",
           <Route path="*" element={<HomeMediwave  />} />
           <Route path="vrme" element={<PageHomeVRme />} />
           <Route path="medilink" element={<AppMedilink />} />
           <Route path="steriwave" element={<SteriwaveHome />} />
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
     </div>
   );
 };

@@ -14,7 +14,7 @@ const DocumentViewer = ({ documents }) => {
           alt={doc.name}
           onClick={() => handleClick(doc.url)}
           style={{width:'0%'}}
-          href=''
+          href='/steriwave'
         >
          <img src={doc.img} style={{width:'40px',
    marginLeft:'30%'}} alt='img' />

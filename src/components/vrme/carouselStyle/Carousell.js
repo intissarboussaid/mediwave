@@ -1,16 +1,11 @@
 import React, {useState} from "react";
 import './Carousel.css';
-import { useTranslation } from "react-i18next";
 
 
 const MAX_VISIBILITY = 3;
 const Carousell = ({children}) => {
-  const { t } = useTranslation();
   const [active, setActive] = useState(2);
   const count = React.Children.count(children);
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
   
   return (
     <>

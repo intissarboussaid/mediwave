@@ -457,7 +457,7 @@ function DiscoverUs() {
             <section className="about-section" style={{ marginTop: "-5%" }}>
                 <div className="container">
                     <div className="title-section" >
-                        <h1 style={titleStyle} >{t("t-Solution")} <a style={{ color: 'rgb(52, 152, 219)', textDecoration: 'none' }} href=''>{t("t-Our")}</a></h1>
+                        <h1 style={titleStyle} >{t("t-Solution")} <a style={{ color: 'rgb(52, 152, 219)', textDecoration: 'none' }} href='#DiscoverOurSolution'>{t("t-Our")}</a></h1>
                     </div>
                     <div>
                         <div className='col-lg-12 col-md-12 col-ms-12 col-s-12 ' style={{ background: 'white', height: '200%', marginTop: '17%' }}>
@@ -474,7 +474,7 @@ function DiscoverUs() {
                                     style={rightText}
                                 >
                                     {/* <div style={{fontSize:fontSizeP}}> */}
-                                        <a style={{ fontSize: '25px', color: 'rgb(52, 152, 219)', textDecoration: 'none' }} href=''>  {t("h_2")}</a> ,{t("t-phobia_1")}<br />{t("t-phobia_2")}
+                                        <a style={{ fontSize: '25px', color: 'rgb(52, 152, 219)', textDecoration: 'none' }} href='DiscoverOurSolution'>  {t("h_2")}</a> ,{t("t-phobia_1")}<br />{t("t-phobia_2")}
                                         {/* </div> */}
                                 </motion.p>
 
@@ -504,7 +504,7 @@ function DiscoverUs() {
                                     style={teftText}
                                 >
                                     {/* <div style={{fontSize:fontSizeP}}> */}
-                                          <a style={{ fontSize: '25px', color: 'rgb(52, 152, 219)', textDecoration: 'none' }} href=''> {t("h_5")}</a>,{t("t-kine-vr-1")}<br />{t("t-kine-vr-2")}
+                                          <a style={{ fontSize: '25px', color: 'rgb(52, 152, 219)', textDecoration: 'none' }} href='#DiscoverOurSolution'> {t("h_5")}</a>,{t("t-kine-vr-1")}<br />{t("t-kine-vr-2")}
                                            {/* </div> */}
                                 </motion.p>
                                 <div className="center-button">
@@ -565,7 +565,7 @@ function DiscoverUs() {
                                     style={teftText}
                                 >
                                     {/* <div style={{fontSize:fontSizeP}}>   */}
-                                    <a style={{ fontSize: '25px', color: 'rgb(52, 152, 219)', textDecoration: 'none' }} href=''> Medilink</a>,{t("t-Medilink1")} <br />{t("t-Medilink2")} 
+                                    <a style={{ fontSize: '25px', color: 'rgb(52, 152, 219)', textDecoration: 'none' }} href='#DiscoverOurSolution'> Medilink</a>,{t("t-Medilink1")} <br />{t("t-Medilink2")} 
                                     {/* </div> */}
                                 </motion.p>
                                 <div className="center-button">

@@ -14,17 +14,17 @@ const Footer = () => {
               <div className="col-lg-4 col-md-4 col-s-12">
                 <ul className="social-icons" style={{ marginLeft: '12%', marginTop: '12%' }}>
                   <li>
-                    <a className="facebook" href="">
+                    <a className="facebook" href="#footer">
                       <i className="fa-brands fa-facebook-f"></i>
                     </a>
                   </li>
                   <li>
-                    <a className="instagram" href="">
+                    <a className="instagram" href="#footer">
                       <i className="fa-brands fa-instagram"></i>
                     </a>
                   </li>
                   <li>
-                    <a className="linkedin" href="">
+                    <a className="linkedin" href="#footer">
                       <i className="fa-brands fa-linkedin-in"></i>
                     </a>
                   </li>

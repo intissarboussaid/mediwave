@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import CountUp from "react-countup";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
@@ -21,7 +21,7 @@ const InformationSection = (props) => {
                 marginTop: "3%",
                 marginBottom: "3%",
                 textAlign: "center",
-                marginBottom: "2%",
+                // marginBottom: "2%",
                 fontWeight: "100",                
               }}
             >
@@ -36,7 +36,7 @@ const InformationSection = (props) => {
                     <span className="timer" data-from="0" data-to="125"></span>
                     <CountUp end={71} duration={3} /> %
                   </p>
-                  <h2></h2>
+                  {/* <h2></h2> */}
                   <p>{t("B_1")}</p>
                 </div>
               </div>
@@ -46,7 +46,7 @@ const InformationSection = (props) => {
                     <span className="timer" data-from="0" data-to="750"></span>
                     <CountUp end={284} duration={3} />M{/* 284M */}
                   </p>
-                  <h2></h2>
+                  {/* <h2></h2> */}
                   <p >{t("B_2")}</p>
                 </div>
               </div>
@@ -56,7 +56,7 @@ const InformationSection = (props) => {
                     <span className="timer" data-from="0" data-to="170"></span>
                     <CountUp end={63} duration={3} /> %
                   </p>
-                  <h2></h2>
+                  {/* <h2></h2> */}
                   <p >{t("B_3")}</p>
                 </div>
               </div>

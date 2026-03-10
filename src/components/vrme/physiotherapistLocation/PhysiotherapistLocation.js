@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState, ReactElement } from "react";
+import React, { useEffect,  useState } from "react";
 import { Card } from "primereact/card";
 import useResizeScreen from "../../../utils/useResizeScreen";
 import { Avatar } from "primereact/avatar";
@@ -12,7 +12,7 @@ import { useTranslation } from "react-i18next";
 
 const PhysiotherapistLocalisation = () => {
   const { t } = useTranslation();
-  const [loading, setLoading] = useState("");
+  // const [loading, setLoading] = useState("");
   const [physiotherapist, setPhysiotherapist] = useState({});
   const [marginLeftAvatar, setMarginLeftAvatar]= useState('0%')
   const [mapAdjust, setMapAdjust] = useState(
@@ -31,7 +31,7 @@ const PhysiotherapistLocalisation = () => {
     console.log(physiotherapist);
   }, [physiotherapist]);
 
-  const [data, setData] = useState([
+  const data=[
     {
       acts_et_soins: "acts et soins du physio1",
       adresse: "adresse sokra ",
@@ -171,16 +171,16 @@ const PhysiotherapistLocalisation = () => {
       // width={100}
          />
     },
-  ]);
+  ];
 
   const [filter, setFielters] = useState({});
-  const handleFilters = (e) => {
-    const value = e.target.value;
-    setFielters({
-      ...filter,
-      [e.target.name]: value,
-    });
-  };
+  // const handleFilters = (e) => {
+  //   const value = e.target.value;
+  //   setFielters({
+  //     ...filter,
+  //     [e.target.name]: value,
+  //   });
+  // };
   const header = ([
     {img: <img
       alt="Card"
@@ -209,7 +209,7 @@ const PhysiotherapistLocalisation = () => {
 />}
   ]
   );
-  const [Headers, setHeader] = useState(header);
+  const Headers=header;
   useEffect(() => {
     console.log(Headers);
   }, [Headers]);
@@ -221,7 +221,7 @@ const PhysiotherapistLocalisation = () => {
         )
       )
     );
-  }, [data, filter]);
+  }, [data, filter,header]);
   const [items, setItems] = useState(data);
   useEffect(() => {
     console.log(items);
@@ -241,6 +241,7 @@ const PhysiotherapistLocalisation = () => {
   const [styleHeight, setStyleHeight]=useState(500);
   useEffect(() => {
     if (width > 1200) {
+      height('auto')
      setStyleLeft('0%');
      setLeftCard('5%');
      setMarginLeftAvatar('-50%')
@@ -433,6 +434,7 @@ const PhysiotherapistLocalisation = () => {
             <div className={`${mapAdjust}`} style={{marginTop:'5.5%'}}>
               <iframe
                 className="sc_googlemap"
+                title="map1"
                 style={{
                   height: 500,
                   width: "100%",
@@ -449,6 +451,7 @@ const PhysiotherapistLocalisation = () => {
             <div className={`${mapAdjust}`}style={{marginTop:'5.5%'}}>
               <iframe
                 className="sc_googlemap"
+                title="map2"
                 style={{
                   height: 500,
                   width: "100%",
@@ -465,6 +468,7 @@ const PhysiotherapistLocalisation = () => {
             <div className={`${mapAdjust}`} style={{marginTop:'5.5%'}}>
               <iframe
                 className="sc_googlemap"
+                title="map2"
                 style={{
                   height: 500,
                   width: "100%",
@@ -481,6 +485,7 @@ const PhysiotherapistLocalisation = () => {
             <div className={`${mapAdjust}`} style={{marginTop:'5.5%'}}>
               <iframe
                 className="sc_googlemap"
+                title="map3"
                 style={{
                   height: 500,
                   width: "100%",
@@ -497,6 +502,7 @@ const PhysiotherapistLocalisation = () => {
             <div className={`${mapAdjust}`} style={{marginTop:'5.5%'}}>
               <iframe
                 className="sc_googlemap"
+                title="map4"
                 style={{
                   height: 500,
                   width: "100%",
@@ -513,8 +519,8 @@ const PhysiotherapistLocalisation = () => {
             <div className={`${mapAdjust}`}style={{marginTop:'5.5%'}}>
               <iframe
                 className="sc_googlemap"
+                title="map5"
                 style={{
-                  height: 500,
                   height: "400",
                   width: "100%",
                   // marginTop: "16%",

@@ -28,7 +28,7 @@ const Docs = () => {
             <section className="about-section" style={{ marginTop: "-7%" }}>
                 <div className="container">
                     <div className="title-section">
-                        <h1>{t("t-Analyses1")} <a style={{ color: 'rgb(52, 152, 219)', textDecoration: 'none' }}href=''>{t("t-Analyses2")} </a></h1>
+                        <h1>{t("t-Analyses1")} <a style={{ color: 'rgb(52, 152, 219)', textDecoration: 'none' }}href='steriwave#DiscoverOurSolution'>{t("t-Analyses2")} </a></h1>
                     </div>
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 all2 " style={{ background: 'white' }}>
                         <div className="container " >

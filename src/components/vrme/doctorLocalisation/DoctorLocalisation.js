@@ -1,13 +1,13 @@
-import React, { useEffect, useMemo, useState, ReactElement } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+// import { Link } from "react-router-dom";
 // import useFetch from "./hooks/useFetch";
 import useResizeScreen from "../../../utils/useResizeScreen";
 // import { GoogleMap, Marker } from "@react-google-maps/api";
 // import { Wrapper, Status } from "@googlemaps/react-wrapper";
 import { Card } from "primereact/card";
 import { Avatar } from "primereact/avatar";
-import { Badge } from "primereact/badge";
-import { Button } from "primereact/button";
+// import { Badge } from "primereact/badge";
+// import { Button } from "primereact/button";
 import doctorImage from "../../../assets/images/doctor.jpg";
 import doctorImage1 from "../../../assets/images/doc1.jpg";
 import doctorImage2 from "../../../assets/images/doc2.jpg";
@@ -21,7 +21,7 @@ const DoctorLocalisation = () => {
   const { width, height } = useResizeScreen();
   const [styleLeft, setStyleLeft]=useState('0%');
   const [marginLeftAvatar, setMarginLeftAvatar]= useState('0%')
-  const [loading, setLoading] = useState("");
+  // const [loading, setLoading] = useState("");
   const [doctor, setDoctor] = useState({});
   const [mapAdjust, setMapAdjust] = useState(
     "col-lg-8 col-md-7 col-sm-6 col-xs-12"
@@ -45,6 +45,7 @@ const DoctorLocalisation = () => {
   }, [doctor]);
   useEffect(() => {
     if (width > 1200) {
+      height('auto')
      setStyleLeft('0%');
      setLeftShowDoctor('0%');
      setWidthShowDoctor('90%');
@@ -87,9 +88,9 @@ const DoctorLocalisation = () => {
     setMarginLeftAvatar('10%')
    
   }
- }, [width]);
+ }, [width,height]);
 
-  const [data, setData] = useState([
+  const data=[
     {
       acts_et_soins: "acts et soins du medcin",
       adresse: "adresse sokra ",
@@ -217,22 +218,22 @@ const DoctorLocalisation = () => {
       alt="doctor"
       src={doctorImage5}/>
     },
-  ]);
+  ];
 
-  const [filter, setFielters] = useState({});
-  const handleFilters = (e) => {
-    const value = e.target.value;
-    setFielters({
-      ...filter,
-      [e.target.name]: value,
-    });
-  };
-  const header = (
-    <img
-      alt="Card"
-      src={doctorImage}
-    />
-  );
+  const filter = {};
+  // const handleFilters = (e) => {
+  //   const value = e.target.value;
+  //   setFielters({
+  //     ...filter,
+  //     [e.target.name]: value,
+  //   });
+  // };
+  // const header = (
+  //   <img
+  //     alt="Card"
+  //     src={doctorImage}
+  //   />
+  // );
   const [items, setItems] = useState(data);
   useEffect(() => {
     console.log(items);
@@ -404,6 +405,7 @@ const DoctorLocalisation = () => {
             <div className={`${mapAdjust}`} style={{marginTop:'13%'}}>
               <iframe
                 className="sc_googlemap"
+                title="map1"
                 style={{
                   height: cardHeight,
                   width: "220%",
@@ -420,6 +422,7 @@ const DoctorLocalisation = () => {
             <div className={`${mapAdjust}`} style={{marginTop:'13%'}}>
               <iframe
                 className="sc_googlemap"
+                title="map2"
                 style={{
                   height: cardHeight,
                   width: "220%",
@@ -435,6 +438,7 @@ const DoctorLocalisation = () => {
             <div className={`${mapAdjust}`} style={{marginTop:'13%'}}>
               <iframe
                 className="sc_googlemap"
+                title="map3"
                 style={{
                   height: cardHeight,
                   width: "220%",
@@ -450,6 +454,7 @@ const DoctorLocalisation = () => {
             <div className={`${mapAdjust}`} style={{marginTop:'13%'}}>
               <iframe
                 className="sc_googlemap"
+                title="map4"
                 style={{
                   height: cardHeight,
                   width: "220%",
@@ -465,6 +470,7 @@ const DoctorLocalisation = () => {
             <div className={`${mapAdjust}`} style={{marginTop:'13%'}}>
               <iframe
                 className="sc_googlemap"
+                title="map5"
                 style={{
                   height: cardHeight,
                   width: "220%",
@@ -480,6 +486,7 @@ const DoctorLocalisation = () => {
             <div className={`${mapAdjust}`} style={{marginTop:'13%'}}>
               <iframe
                 className="sc_googlemap"
+                title="map6"
                 style={{
                   height: cardHeight,
                   width: "220%",

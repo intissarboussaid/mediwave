@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import useResizeScreen from "../../../utils/useResizeScreen";
-import img from "../../../assets/images/HeaderMedilink.png";
 const Footer = () => {
   const { t } = useTranslation();
   const windowDimensions = useResizeScreen();
@@ -62,17 +61,17 @@ const Footer = () => {
               </div>
               <ul className="social-icons">
                 <li>
-                  <a className="facebook" href="">
+                  <a className="facebook" href="/medilink">
                   <i className="fa-brands fa-facebook-f"></i>
                   </a>
                 </li>
                 <li>
-                  <a className="instagram" href="">
+                  <a className="instagram" href="/medilink">
                   <i className="fa-brands fa-instagram"></i>
                   </a>
                 </li>
                 <li>
-                  <a className="linkedin" href="">
+                  <a className="linkedin" href="/medilink">
                   <i className="fa-brands fa-linkedin-in"></i>
                   </a>
                 </li>

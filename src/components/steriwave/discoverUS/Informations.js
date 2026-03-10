@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, {  useState, useEffect } from 'react';
 import { useTranslation } from "react-i18next";
 import useResizeScreen from "../../../utils/useResizeScreen";
 import Img from "../../../assets/images/Steriwave.jpg";
@@ -198,7 +198,7 @@ function Informations() {
         }
     }, [windowDimensions.width,]);
 
-    const slideRef = useRef(null);
+    // const slideRef = useRef(null);
 
     return (
         <>
@@ -206,7 +206,7 @@ function Informations() {
                 <section className="about-section" style={{ marginTop: "-7%" }}>
                     <div className="container">
                         <div className="title-section">
-                            <h1>{t("t-Solution")} <a style={{ color: 'rgb(52, 152, 219)', textDecoration: 'none' }} href=''>SteriWave</a></h1>
+                            <h1>{t("t-Solution")} <a style={{ color: 'rgb(52, 152, 219)', textDecoration: 'none' }} href='steriwave#DiscoverOurSolution'>SteriWave</a></h1>
                         </div>
                         {/* <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 all2 " style={{ background: 'white' }}>
                             <div className="container " >
@@ -265,7 +265,7 @@ function Informations() {
                                     style={rightText}
                                 >
                                     {/* <div style={{fontSize:fontSizeP}}> */}
-                                        <a style={{ fontSize: '25px', color: 'rgb(52, 152, 219)', textDecoration: 'none' }} href=''>  STERIWAVE:</a> <br/>{t("steri-intro1")}<br />{t("steri-intro2")}
+                                        <a style={{ fontSize: '25px', color: 'rgb(52, 152, 219)', textDecoration: 'none' }} href='steriwave#DiscoverOurSolution'>  STERIWAVE:</a> <br/>{t("steri-intro1")}<br />{t("steri-intro2")}
                                         {/* </div> */}
                                 </motion.p>
                             </div>
@@ -283,7 +283,7 @@ function Informations() {
                                     whileTap={{ scale: 0.8 }}
                                     style={teftText}
                                 >
-                                          <a style={{ fontSize: '25px', color: 'rgb(52, 152, 219)', textDecoration: 'none' }} href=''> STERIWAVE</a> <br/> {t("steri-useText1")}<br />{t("steri-useText2")}
+                                          <a style={{ fontSize: '25px', color: 'rgb(52, 152, 219)', textDecoration: 'none' }} href='steriwave#DiscoverOurSolution'> STERIWAVE</a> <br/> {t("steri-useText1")}<br />{t("steri-useText2")}
                                            {/* </div> */}
                                 </motion.p>
 
@@ -304,7 +304,7 @@ function Informations() {
                                     style={rightText}
                                 >
                                     {/* <div style={{fontSize:fontSizeP}}>  */}
-                                    <a style={{ fontSize: '25px', color: 'rgb(52, 152, 219)', textDecoration: 'none' }} href=''> Steriwave</a><br />{t("steri-Step1")} <br />{t("steri-Step2")} <br/> {t("steri-Step3")} <br/>{t("steri-Step4")}<br/> {t("steri-Step5")}
+                                    <a style={{ fontSize: '25px', color: 'rgb(52, 152, 219)', textDecoration: 'none' }} href='steriwave#DiscoverOurSolution'> Steriwave</a><br />{t("steri-Step1")} <br />{t("steri-Step2")} <br/> {t("steri-Step3")} <br/>{t("steri-Step4")}<br/> {t("steri-Step5")}
                                      {/* </div> */}
                                 </motion.p>
                             </div>

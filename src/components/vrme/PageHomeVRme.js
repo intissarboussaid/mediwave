@@ -7,7 +7,6 @@ import Header from "../../components/vrme/navigation/Header";
 import Footer from "../vrme/navigation/Footer";
 import VideoHeader from "../../components/vrme/videoHeader.js/VideoHeader";
 import Tarification from "../../components/vrme/tarification/Tarification";
-import NosTherapeute from "../../components/vrme/nosTherapeute/NosTherapeute";
 import DifferentTherapies from "../../components/vrme/differentTherapies/DifferentTherapies.js";
 import InformationSection from "../../components/vrme/informationSection/InformationSection";
 import Partenaire from "../../components/vrme/partenaire/Partenaire";
@@ -18,8 +17,7 @@ import Contact from '../mediwave/contact/Contact';
 import Advantage from "../../components/vrme/advantage/Advantage";
 import DifferentPhysiotherapies from "../../components/vrme/differentphysiotherapies/DifferentPhysiotherapies.js";
 
-import SymbolMedive from "../vrme/symboleMediwave/SymboleMediwave";
-import Apptest from './differentTherapies/Apptest.js';
+
 
 
 

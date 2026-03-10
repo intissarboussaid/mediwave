@@ -14,7 +14,7 @@ import social from "../../../assets/images/social.jpg";
 import glossophobie from "../../../assets/images/glossophobie.jpg";
 
 
-const CARDS = 10;
+
 const Card = ({ src, title, content,content1,content2 }) => (
   <div className='card'>
     <div>{src}</div>
@@ -30,12 +30,12 @@ function Apptest() {
   const data = [
     {
       id: 1,
-      imgUrl: <img src={claustrophobie}  />,
+      imgUrl: <img src={claustrophobie} alt="Claustrophobia"  />,
       text1: t("CLAUSTROPHOBIA_1"),
       text2: "",
       text3: t("CLAUSTROPHOBIA_2"),
       name: t("CLAUSTROPHOBIA"),
-      img: <img src={assenseur} />,
+      img: <img src={assenseur} alt='assenseur' />,
       textt1: t("APPLICATIONS_1"),
       textt2: " ",
       textt3: "  ",
@@ -44,14 +44,13 @@ function Apptest() {
     },
     {
       id: 3,
-      imgUrl: <img src={acrophobiee} />,
+      imgUrl: <img src={acrophobiee} alt='acrophobiee' />,
       text1: t("ACROPHOBIA_1"),
       text2: t("ACROPHOBIA_2"),
       text3: "  ",
-      name: t("AGORAPHOBIA"),
-  
+      name: t("AGORAPHOBIA"),  
       id: 4,
-      img: <img src={acrophobieSolution} />,
+      img: <img src={acrophobieSolution}  alt='acrophobieSolution'/>,
       text1: t("APPLICATIONS_2"),
       textt2: "  ",
       textt3: "  ",
@@ -64,8 +63,7 @@ function Apptest() {
       text1: t("ARACHNOPHOBIA_1"),
       text2: t("ARACHNOPHOBIA_2"),
       text3: "  ",
-      name: t("ARACHNOPHOBIA"),
-  
+      name: t("ARACHNOPHOBIA"),  
       img: <img src={arachrophobieSolution}/>,
       textt1: t("APPLICATIONS_3"),
       textt2: "",
@@ -75,13 +73,13 @@ function Apptest() {
     },
     {
       id: 7,
-      imgUrl: <img src={agora} s></img>,
+      imgUrl: <img src={agora} alt='agora' />,
       text1: t("AGORAPHOBIA_1"),
       text2: t("AGORAPHOBIA_2"),
       text3: "  ",
       name: t("AGORAPHOBIA"),
       id: 8,
-      img: <img src={agoraSol} />,
+      img: <img src={agoraSol} alt='agoraSol' />,
       textt1: t("APPLICATIONS_4_1"),
       textt2: t("APPLICATIONS_4_2"),
       textt3: "  ",
@@ -91,13 +89,13 @@ function Apptest() {
     },
     {
       id: 9,
-      imgUrl: <img src={social} />,
+      imgUrl: <img src={social} alt='social' />,
       text1: t("SOCIAL_PHOBIA_1"),
       text2: t("SOCIAL_PHOBIA_2"),
       text3: "  ",
       name: t("SOCIAL_PHOBIA"),
       id: 10,
-      img: <img src={glossophobie}/>,
+      img: <img src={glossophobie} alt='glossophobie'/>,
       textt1: t('SOCIAL_PHOBIA_Soll_1'),
       textt2: t('SOCIAL_PHOBIA_Soll_2'),
       textt3: t('SOCIAL_PHOBIA_Soll_3'),

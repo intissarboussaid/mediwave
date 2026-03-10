@@ -1,7 +1,4 @@
-
-import React, { useRef, useEffect, useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import React from "react";
 import ninjaCandy from "../../../assets/images/NinjaVR.jpg";
 import KineCOu from "../../../assets/images/KneCou.jpg";
 import KineSoignies from "../../../assets/images/KineSoignies.jpg";
@@ -12,7 +9,7 @@ import Carousell from '../carouselStyle/Carousell.js';
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
+
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 
@@ -22,9 +19,9 @@ import Modal from '@mui/material/Modal';
 
 function DifferentPhysiotherapies(props) {
   const { t } = useTranslation();
-  const slideRef = useRef(null);
+  // const slideRef = useRef(null);
   const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
+  // const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   const Card = ({ src, title, content, content1, content2, button, subContent1, subContent2, subContent3, subContent4,subContent5 }) => (
     <div className='card'>
@@ -59,38 +56,38 @@ function DifferentPhysiotherapies(props) {
   
     </div>
   );
-  const [loadingProgress, setLoadingProgress] = useState(0);
-  const { imgUrl, setImgUrl } = useState('');
-  const handleClickNext = () => {
-    let items = slideRef.current.querySelectorAll(".item1");
-    slideRef.current.appendChild(items[0]);
-  };
-  const handleClickPrev = () => {
-    let items = slideRef.current.querySelectorAll(".item1");
-    slideRef.current.prepend(items[items.length - 1]);
-  };
-  const [show, setShow] = useState(false);
+  // const [loadingProgress, setLoadingProgress] = useState(0);
+  // const { imgUrl, setImgUrl } = useState('');
+  // const handleClickNext = () => {
+  //   let items = slideRef.current.querySelectorAll(".item1");
+  //   slideRef.current.appendChild(items[0]);
+  // };
+  // const handleClickPrev = () => {
+  //   let items = slideRef.current.querySelectorAll(".item1");
+  //   slideRef.current.prepend(items[items.length - 1]);
+  // };
+  // const [show, setShow] = useState(false);
 
   // const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-  const style = {
-    width:
-    {
-      width: '100%',
-      height: '100vh',
-    },
-    media: {
-      '@media screen and (max-width: 587px)': {
-        '.all1 .item1': {
-          displau: 'none'
-        }
-      },
-    }
-  }
+  // const handleShow = () => setShow(true);
+  // const style = {
+  //   width:
+  //   {
+  //     width: '100%',
+  //     height: '100vh',
+  //   },
+  //   media: {
+  //     '@media screen and (max-width: 587px)': {
+  //       '.all1 .item1': {
+  //         displau: 'none'
+  //       }
+  //     },
+  //   }
+  // }
   const data = [
     {
       id: 1,
-      imgUrl: <img src={ninjaCandy} style={{width:'100%'}}/>,
+      imgUrl: <img src={ninjaCandy} style={{width:'100%'}} alt="ninjaCandy"/>,
       text1: t("CANDY_NINJA_TEXT1"),
       text2: "",
       text3: "  ",
@@ -98,7 +95,7 @@ function DifferentPhysiotherapies(props) {
     },
     {
       id: 2,
-      imgUrl: <img src={KineCOu} style={{width:'100%'}}/>,
+      imgUrl: <img src={KineCOu} style={{width:'100%'}} alt="KineCOu"/>,
       text1: t("Brick_Breaker_text1"),
       text2: " ",
       text3: "  ",
@@ -106,7 +103,7 @@ function DifferentPhysiotherapies(props) {
     },
     {
       id: 3,
-      imgUrl: <img src={KineSoignies} style={{width:'100%'}}/>,
+      imgUrl: <img src={KineSoignies} style={{width:'100%'}} alt="KineSoignies"/>,
       text1:t("Shot_Put_text1"),
       text2: t("Shot_Put_text2"),
       text3: "  ",
@@ -115,7 +112,7 @@ function DifferentPhysiotherapies(props) {
 
     {
       id: 4,
-      imgUrl: <img src={kineSpear} style={{width:'100%'}}/>,
+      imgUrl: <img src={kineSpear} style={{width:'100%'}} alt="KineSpear"/>,
       text1: t("Spear_text1"),
       text2: t("Spear_text2"),
       text3: "  ",
@@ -123,7 +120,7 @@ function DifferentPhysiotherapies(props) {
     },
     {
       id: 5,
-      imgUrl: <img src={KineSquat} style={{width:'100%'}}/>,
+      imgUrl: <img src={KineSquat} style={{width:'100%'}} alt="KineSquat"/>,
       text1:t("kineSquat_text1"),
       text2:t("kineSquat_text2"), 
       text3: "  ",
@@ -132,7 +129,7 @@ function DifferentPhysiotherapies(props) {
 
     {
       id: 7,
-      imgUrl:  <img src={AppleOfEden} style={{width:'100%'}}/>,
+      imgUrl:  <img src={AppleOfEden} style={{width:'100%'}} alt="Apple of Eden"/>,
       text1:t("APPLE_EDEN_text1"),  
       text2:t("APPLE_EDEN_text2"),   
       text3: "  ",
@@ -141,18 +138,18 @@ function DifferentPhysiotherapies(props) {
 
 
   ];
-  const style1 = {
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    width: 400,
-    height:'70vh',
-    bgcolor: 'background.paper',
-    border: '2px solid #000',
-    boxShadow: 24,
-    p: 4,
-  };
+  // const style1 = {
+  //   position: 'absolute',
+  //   top: '50%',
+  //   left: '50%',
+  //   transform: 'translate(-50%, -50%)',
+  //   width: 400,
+  //   height:'70vh',
+  //   bgcolor: 'background.paper',
+  //   border: '2px solid #000',
+  //   boxShadow: 24,
+  //   p: 4,
+  // };
 
   return (
     <>
