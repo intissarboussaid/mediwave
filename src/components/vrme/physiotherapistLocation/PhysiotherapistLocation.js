@@ -171,13 +171,13 @@ const PhysiotherapistLocalisation = () => {
       // width={100}
          />
     },
-  ]);
+  ], []);
 
   const filter = useMemo(() => {
     return {
       genre: someProp,   // example: dynamic filter
     };
-  }, [someProp]);
+  }, []);
   // const handleFilters = (e) => {
   //   const value = e.target.value;
   //   setFielters({
@@ -211,7 +211,7 @@ const PhysiotherapistLocalisation = () => {
   src={PhysiotherapistImage5}
   // width={100}
 />}
-  ]
+  ],[]
   );
   const Headers=header;
   useEffect(() => {
@@ -219,26 +219,21 @@ const PhysiotherapistLocalisation = () => {
   }, [Headers]);
   useEffect(() => {
     setItems(
-      header.filter((Headers) =>
-        Object.entries(filter).every(([key, value]) =>
-        Headers[key].includes(value)
-        )
+      data.filter((item) =>
+        Object.entries(filter).every(([key, value]) => {
+          const field = item[key];
+          // check before calling .includes
+          if (field == null) return false;
+          return String(field).includes(value);
+        })
       )
     );
-  }, [data, filter,header]);
+  }, [filter, data]);
   const [items, setItems] = useState(data);
   useEffect(() => {
     console.log(items);
   }, [items]);
- useEffect(() => {
-    setItems(
-      data.filter((items) =>
-        Object.entries(filter).every(([key, value]) =>
-          items[key].includes(value)
-        )
-      )
-    );
-  }, [filter, data]);
+
 
   const { width, height } = useResizeScreen();
   const [leftCard, setLeftCard] = useState('0%');
