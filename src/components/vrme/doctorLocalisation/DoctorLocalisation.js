@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useMemo,someProp} from "react";
+import React, { useEffect, useState, useMemo} from "react";
 // import { Link } from "react-router-dom";
 // import useFetch from "./hooks/useFetch";
 import useResizeScreen from "../../../utils/useResizeScreen";
@@ -45,7 +45,6 @@ const DoctorLocalisation = () => {
   }, [doctor]);
   useEffect(() => {
     if (width > 1200) {
-      height('auto')
      setStyleLeft('0%');
      setLeftShowDoctor('0%');
      setWidthShowDoctor('90%');
@@ -220,11 +219,9 @@ const DoctorLocalisation = () => {
     },
   ], []);
   
-  const filter = useMemo(() => {
-    return {
-      genre: someProp,   // example: dynamic filter
-    };
-  },  [someProp]);
+const [filter] = useState({
+  genre: ""
+});
   // const handleFilters = (e) => {
   //   const value = e.target.value;
   //   setFielters({

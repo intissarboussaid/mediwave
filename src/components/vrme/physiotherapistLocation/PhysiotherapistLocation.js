@@ -1,4 +1,4 @@
-import React, { useEffect,  useState ,useMemo,someProp} from "react";
+import React, { useEffect,  useState ,useMemo} from "react";
 import { Card } from "primereact/card";
 import useResizeScreen from "../../../utils/useResizeScreen";
 import { Avatar } from "primereact/avatar";
@@ -173,11 +173,9 @@ const PhysiotherapistLocalisation = () => {
     },
   ], []);
 
-  const filter = useMemo(() => {
-    return {
-      genre: someProp,   // example: dynamic filter
-    };
-  }, []);
+const [filter] = useState({
+  genre: ""
+});
   // const handleFilters = (e) => {
   //   const value = e.target.value;
   //   setFielters({

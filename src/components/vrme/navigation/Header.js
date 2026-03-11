@@ -17,7 +17,7 @@ const Header = () => {
     i18next.changeLanguage(code);
   }
 const [marginleft, setMarginleft]=useState('20%');
-  const { width, height } = useResizeScreen();
+  const { width } = useResizeScreen();
   const [widthImage, setWidthImage] = useState(150);
   const [styleImage, setStyleImage] = useState({ margin: "7%" });
   const [active, setActive] = useState({
@@ -35,7 +35,6 @@ const [marginleft, setMarginleft]=useState('20%');
 
   const ChangeInderline = () => {
     if (window.scrollY <= 200) {
-      height('auto')
       setActive({
         home: "active",
         therapies: "",
