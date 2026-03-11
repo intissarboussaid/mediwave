@@ -17,7 +17,7 @@ const Header = () => {
     i18next.changeLanguage(code);
   }
 
-  const { width, height } = useResizeScreen();
+  const { width } = useResizeScreen();
   // const [widthImage, setWidthImage] = useState(150);
   const [marginTop, setMarginTop] = useState();
   // const [dropDown, setDropDown] = useState({
@@ -73,7 +73,7 @@ const Header = () => {
   useEffect(() => {
     if (width > 1400) {
       console.log("i am sup 1400 ");
-      height('auto')
+      
       // setWidthImage(150);
       // setStyleImage({
       //   marginLeft: '-100%',
@@ -222,7 +222,7 @@ const Header = () => {
     // console.log("i am");
     // console.log(width);
     // console.log(widthImage);
-  }, [width,height]);
+  }, [width]);
 
   return (
     <div>
