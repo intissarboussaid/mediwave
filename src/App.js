@@ -19,10 +19,10 @@ const App = () => {
  <div id="container">
        <BrowserRouter>
         <Routes>
-          <Route path="*" element={<HomeMediwave  />} />
-          <Route path="vrme" element={<PageHomeVRme />} />
-          <Route path="medilink" element={<AppMedilink />} />
-          <Route path="steriwave" element={<SteriwaveHome />} />
+          <Route path="/" element={<HomeMediwave  />} />
+          <Route path="/vrme" element={<PageHomeVRme />} />
+          <Route path="/medilink" element={<AppMedilink />} />
+          <Route path="/steriwave" element={<SteriwaveHome />} />
         </Routes>
       </BrowserRouter>
     </div>

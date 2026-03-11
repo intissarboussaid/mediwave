@@ -239,7 +239,7 @@ const [filter] = useState({
   const [styleHeight, setStyleHeight]=useState(500);
   useEffect(() => {
     if (width > 1200) {
-      height('auto')
+      height('auto');
      setStyleLeft('0%');
      setLeftCard('5%');
      setMarginLeftAvatar('-50%')
